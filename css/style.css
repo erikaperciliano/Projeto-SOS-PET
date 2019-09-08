@@ -72,3 +72,10 @@
 .login{
     background:darkkhaki;
 }
+
+body, .artigo{
+    background:darkslategray;
+}
+.caixa-fotos{
+    background-color: rgba(193, 194, 197, 0.5);
+}
