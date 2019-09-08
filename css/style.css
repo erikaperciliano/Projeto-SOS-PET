@@ -61,7 +61,7 @@
 }
 
 #menssagem a{
-    color:gray;
+    color:black;
 }
 
 #menssagem a:hover{
@@ -70,7 +70,7 @@
 }
 
 .login{
-    background:darkkhaki;
+    background:darkcyan;
 }
 
 body, .artigo{
