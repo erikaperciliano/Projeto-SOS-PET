@@ -42,3 +42,33 @@
     object-fit:cover; 
     height:200px;
 }
+
+.submit-senha{
+    margin-bottom:20px;
+}
+
+.font-titulo-cadastro,.botao-cadastro{
+    font-family: 'Noto Serif', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Fredoka One', cursive;
+    color:darkred;
+    margin-bottom:20px;
+}
+
+.botao-cadastro{
+    color:white;
+    background:darkred;
+}
+
+#menssagem a{
+    color:gray;
+}
+
+#menssagem a:hover{
+    color:darkred;
+    text-decoration:none;
+}
+
+.login{
+    background:darkkhaki;
+}

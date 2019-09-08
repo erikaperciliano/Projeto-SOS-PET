@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Lobster|Noto+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.png" />
 </head>
@@ -24,15 +25,17 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
           <li><a class="nav-item nav-link" href="#">início<span class="sr-only">(current)</span></a></li>
-          <li><a class="nav-item nav-link" href="#">cadastre-se</a></li>
           <li><a class="nav-item nav-link" href="#">quem somos</a></li>
-          <li><a class="nav-item nav-link " data-toggle="modal" data-target="#modal-contato" href="#">contato</a></li>
+          <li><a class="nav-item nav-link" href="#">ong/protetor</a></li>
+          <li><a class="nav-item nav-link" href="#">adotante</a></li>
+          <li><a class="nav-item nav-link" data-toggle="modal" data-target="#modal-contato" href="#">login</a></li>
+          <li><a class="nav-item nav-link" href="#">contato</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <section id="carouselExampleIndicators" class="carousel slide" data-interval="3000" data-ride="carousel">
+    <section id="carouselExampleIndicators" class="carousel slide" data-interval="5000" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -129,19 +132,40 @@
 <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content login">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h2 class="modal-title font-titulo-cadastro" id="exampleModalLabel">Entrar no site</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1 login">E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Insira sua senha">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">lembrar minha senha</label>
+          </div>
+          <div id="menssagem">
+            <a href="#">Não sou cadastrado</a>
+            <br>
+            <a href="#">Esqueceu sua senha?</a>
+            <br>
+            <a href="#">Não recebeu as instruções para confirmação da conta?</a>
+            <br>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn  submit-senha botao-cadastro">Entrar</button>
       </div>
     </div>
   </div>
