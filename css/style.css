@@ -118,10 +118,25 @@ body, .artigo{
 }
 
 .espacamento{
-    margin-top: 8%;
+    margin-top: 0%;
 }
 
-.secao1{
+
+/*.container{
     background-color: transparent url("../img/body.jpeg") no-repeat center center;
-    background-size: cover;
+    
+}*/
+
+#section1 {
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
 }
