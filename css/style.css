@@ -4,7 +4,7 @@
 
 .imagem-carrosel1{
     object-fit:cover; /*o comportamento do elemento selecionado em relação ao container dele */
-    object-position:0 40%;/*eixos: x e y*/
+    object-position:0 20%;/*eixos: x e y*/
     height:400px;
 }
 
@@ -27,11 +27,13 @@
 }
 
 .font-titulo{
-    font-family: 'Pacifico', cursive;
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Chilanka', cursive;
 }
 
 .cor-especial{
-    color:darkred;
+    color:#191818;
+    font-weight: bold;
 }
 
 .borda-cor-especial{
@@ -74,8 +76,52 @@
 }
 
 body, .artigo{
-    background:darkslategray;
+    line-height: 1;
+    overflow-x: hidden;
 }
 .caixa-fotos{
     background-color: rgba(193, 194, 197, 0.5);
+}
+
+.nav-header{
+    background-color: #fec118;
+    width: 100%;
+    padding: 30px;
+    /* height: auto; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom: 40px solid black;
+}
+
+.navbar-header{
+    color:white;
+    font-family: 'Chilanka', cursive;
+}
+/*teste*/
+.center{
+    font: 900 18px/120% Pbold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.center, a:hover{
+    text-decoration: none;
+}
+
+.logo{
+    font-family: 'Chilanka', cursive;
+    font-family: 'Cute Font', cursive;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+}
+
+.espacamento{
+    margin-top: 8%;
+}
+
+.secao1{
+    background-color: transparent url("../img/body.jpeg") no-repeat center center;
+    background-size: cover;
 }

@@ -4,39 +4,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SOS PET</title>
+  <title>SOS PET® | Adotar é tudo de bom</title>
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Lobster|Noto+Serif&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Handlee|Noto+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Chilanka|Cute+Font&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.png" />
 </head>
 
 <body>
+    <div id="headerMobile">
+        <div class="block">
+            <a href="javascript:void(0)" class="menuButton">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </a>
+        </div>
+    </div>
   <header class="menu">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <!--fixed-top-->
-      <a class="navbar font-titulo cor-especial" href="#">SOS PET</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <ul class="navbar-nav">
-          <li><a class="nav-item nav-link" href="#">início</a></li>
-          <li><a class="nav-item nav-link" href="#">quem somos</a></li>
-          <li><a class="nav-item nav-link" href="#">ong/protetor</a></li>
-          <li><a class="nav-item nav-link" href="#">adotante</a></li>
-          <li><a class="nav-item nav-link" data-toggle="modal" data-target="#modal-contato" href="#">login</a></li>
-          <li><a class="nav-item nav-link" href="#">contato</a></li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand-lg justify-content-center  fixed-top nav-header btn-warning">
+      <ul class="nav nav-pills center navbar-nav">
+        <a class="navbar font-titulo cor-especial btn-warning logo" href="#">SOS PET</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle navbar-header btn-warning" data-toggle="dropdown" href="#" role="button"
+            aria-haspopup="true" aria-expanded="false">Início</a>
+  
+          <div class="dropdown-menu">
+            <a class="dropdown-item nav-item nav-link" href="#">Sobre Nós</a>
+            <a class="dropdown-item nav-item nav-link" href="#">Leis de adoção</a>
+            <a class="dropdown-item nav-item nav-link" href="#">Leis Contra Maus Tratos</a>
+            <a class="dropdown-item nav-item nav-link" href="#">Contatos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item nav-item nav-link" href="#">Loging</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-header btn-warning nav-item nav-link" href="#">Adote</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-header  btn-warning nav-item nav-link" href="#">Ajude</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
-    <section id="carouselExampleIndicators" class="carousel slide" data-interval="5000" data-ride="carousel">
+    <section id="carouselExampleIndicators" class="carousel slide espacamento" data-interval="5000" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -87,8 +104,8 @@
       <p class="text-center text-secondary pb-5">Adoção tem o poder de transformar homem e animal em um só coração.</p>
     </section>
 
-    <section class="container bg-light" id="pets">
-      <div class="row justify-content-center artigo">
+    <section class="container bg-light secao1" id="pets">
+      <!--<div class="row justify-content-center artigo">
         <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
           <img class="card-img-top card-posicao-imagem" src="img/dog1.jpg" alt="cachorro">
           <div class="card-body caixa-fotos">
@@ -135,11 +152,11 @@
               sabe do que estamos falando.</p>
           </div>
         </article>
-      </div>
+      </div>-->
     </section>
   </main>
   <footer class="bg-secondary p-3">
-      <p class="text-light m-0 text-center">contato:<a class="text-light" href="mailto:email@frutafruto.com.br">email@fruto.com.br</a></p>
+      <p class="text-light m-0 text-center"><a class="text-light" href="mailto:email@frutafruto.com.br">&copy; SOS PET</a></p>
   </footer>
 <!-- Modal -->
 <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -152,31 +169,6 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </header>
-      <main class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1 login">E-mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="nome@exemplo.com">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Senha</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Insira sua senha">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">lembrar minha senha</label>
-          </div>
-          <div id="menssagem">
-            <a href="#">Não sou cadastrado</a>
-            <br>
-            <a href="#">Esqueceu sua senha?</a>
-            <br>
-            <a href="#">Não recebeu as instruções para confirmação da conta?</a>
-            <br>
-          </div>
-        </form>
-      </main>
       <footer class="modal-footer">
         <button type="submit" class="btn  submit-senha botao-cadastro">Entrar</button>
       </footer>
