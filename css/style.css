@@ -34,10 +34,20 @@
 .cor-especial {
   color: #191818;
   font-weight: bold;
+  background: #fec118;
+}
+
+.fundo-branco,
+#fundo-branco {
+  background: white;
 }
 
 .borda-cor-especial {
-  border-color: darkred;
+  border-color: #fec118;
+  border-top-width: 5%;
+  border-bottom-width: 5%;
+  border-right-width: 5%;
+  border-left-width: 5%;
 }
 
 .card-posicao-imagem {
@@ -85,7 +95,7 @@ body,
 }
 
 .nav-header {
-  background-color: #fec118;
+  background-color: #ffc107 !important;
   width: 100%;
   padding: 30px;
   /* height: auto; */
@@ -99,6 +109,10 @@ body,
 .navbar-header {
   color: white;
   font-family: 'Chilanka', cursive;
+}
+
+.nav-header a:hover {
+  background: #ffc107 !important;
 }
 /*teste*/
 .center {
@@ -169,7 +183,7 @@ a:hover {
 }
 
 #corpo {
-  margin-bottom: 20px;
+  margin-bottom: 2%;
 }
 
 .menu-corpo {
@@ -199,4 +213,25 @@ h3 {
   height: 100px;
   font-weight: bold;
   text-align: center;
+}
+
+.card-largura {
+  max-width: 18rem; /*faz com que a imagem não ultrapasse essa largura*/
+  background: black;
+  color: white;
+  margin-left: 5%;
+  margin-top: -2%;
+}
+
+card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-color: black;
+  color: white;
+}
+
+.fundo-artigo {
+  background: black;
 }
