@@ -249,10 +249,6 @@ label {
 }
 
 @media (max-width: 500px) {
-  .pai {
-    margin-left: 30% !important;
-  }
-
   .menu {
     text-align: center;
     width: 100%;
@@ -293,48 +289,9 @@ label {
 }
 
 /*acréscimos*/
-.pet-list-index {
-  display: table;
-  margin: 0 auto;
-  width: 1102px;
-  margin-bottom: 20px;
-}
 
-.list-inline {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-.list-inline a {
-  color: #000;
-}
-a:hover {
-  color: #fff;
-  background: #000;
-}
-
-.card-text,
-.state {
-  font-family: 'Liu Jian Mao Cao', cursive;
-  font-family: 'Oswald', sans-serif;
-  font-size: larger;
-  text-align: center;
-}
-
-/*acréscimo*/
-
-.active {
+/*.active*/
+.porte-animal {
   color: #fec118;
   border-color: #ffffff;
   height: 19px;
