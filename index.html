@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Anton|Chilanka|Cute+Font&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="shortcut icon" href="img/favicon.png" />
   </head>
@@ -110,8 +113,75 @@
     <section id="corpo">
           <img class="img-fluid" src="img/foto-section1.png" alt="imagem-cachorro"/>
           <h3 class="img">Adote</h3>
-          <p class="lista-animais img">Alguns peludinhos aguardando por uma família</p>
+          <p class="lista-animais img peludinho">Alguns peludinhos aguardando por uma família</p>
     </section>
+    <!--ÚLTIMOS ACRÈSCIMOS:-->
+    <section id="search" class="home-search-area  justify-content-center container">
+      <h1>Procurando por um amigo? Encontre-o aqui!</h1>
+      <form class="new_pet_query" id="new_pet_query" action="/" accept-charset="UTF-8" data-remote="true" method="get">
+        <input name="utf8" type="hidden" value="✓">
+        <div class="row">
+          <div class="col-md-6">
+            <select class="form-control" name="pet_query[specie_eq]" id="pet_query_specie_eq">
+              <option value="">Espécie</option>
+              <option value="cat">Gato</option>
+              <option value="dog">Cachorro</option>
+            </select>
+            <select class="form-control" name="pet_query[size_eq]" id="pet_query_size_eq">
+              <option value="">Porte</option>
+              <option value="small">Pequeno</option>
+              <option value="medium">Médio</option>
+              <option value="big">Grande</option>
+            </select>
+          </div>
+          <div class="col-md-6" id="location-box">
+            <div location-data="state">
+              <select class="form-control" name="pet_query[state_id_eq]" id="pet_query_state_id_eq">
+                <option value="">Estado</option>
+                <option value="1">Acre</option>
+                <option value="2">Alagoas</option>
+                <option value="3">Amapá</option>
+                <option value="4">Amazonas</option>
+                <option value="5">Bahia</option>
+                <option value="6">Ceará</option>
+                <option value="7">Distrito Federal</option>
+                <option value="8">Espírito Santo</option>
+                <option value="9">Goiás</option>
+                <option value="10">Maranhão</option>
+                <option value="11">Mato Grosso</option>
+                <option value="12">Mato Grosso do Sul</option>
+                <option value="13">Minas Gerais</option>
+                <option value="14">Pará</option>
+                <option value="15">Paraíba</option>
+                <option value="16">Paraná</option>
+                <option value="17">Pernambuco</option>
+                <option value="18">Piauí</option>
+                <option value="19">Rio de Janeiro</option>
+                <option value="20">Rio Grande do Norte</option>
+                <option value="21">Rio Grande do Sul</option>
+                <option value="22">Rondônia</option>
+                <option value="23">Roraima</option>
+                <option value="24">Santa Catarina</option>
+                <option value="25">São Paulo</option>
+                <option value="26">Sergipe</option>
+                <option value="27">Tocantins</option>
+              </select>
+            </div>
+    
+            <div location-data="city">
+              <select class="form-control" name="pet_query[city_id_eq]" id="pet_query_city_id_eq">
+                <option value="">Cidade</option>
+              </select>
+            </div>
+          </div>
+        </div>
+    
+        <input type="submit" name="commit" value="Procurar" class="btn btn-secundary btn-lined" id="home-search-button">
+        <img class="arrow" src="img/seta.png"
+          alt="Arrow3 d09bf3fa80c9262d9ba839dca5ba170646206bae69edd303e9bbe9e0c3503a92" style="">
+      </form>
+  </section>
+
     <section class="container bg-light" id="pets">
 
         <div class="row justify-content-center fundo-artigo">
@@ -130,12 +200,15 @@
               <p class="state">Rio de Janeiro / Rj</p>
               <div class="pai">
                   <div class="details">
-                      <div class="active porte-animal">P</div>
-                      <div class="info1">M</div>
+                      <div class="active porte-animal">M</div>
+                      <div class="info1">P</div>
                       <div class="info2">G</div>
                   </div>
                   <img class="female" src="img/macho.png" alt="gato">
                 </div>
+                <div id="mais-informacoes">
+                  <a class="leiaMais" href="#">Leia mais...</a>
+              </div>
             </div>
           </article>
           <article
@@ -160,6 +233,9 @@
               </div>
               <img class="female" src="img/femea.png" alt="gato">
             </div>
+            <div id="mais-informacoes">
+                <a class="leiaMais" href="#">Leia mais...</a>
+            </div>
           </div>
           </article>
           <article
@@ -182,6 +258,9 @@
                       <div class="info2">G</div>
                   </div>
                   <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                    <a class="leiaMais" href="#">Leia mais...</a>
                 </div>
             </div>
           </article>
@@ -206,6 +285,9 @@
                   </div>
                   <img class="female" src="img/macho.png" alt="gato">
                 </div>
+                <div id="mais-informacoes">
+                    <a class="leiaMais" href="#">Leia mais...</a>
+                </div>
             </div>
           </article>
           <article
@@ -228,6 +310,9 @@
                       <div class="info2">G</div>
                   </div>
                   <img class="female" src="img/femea.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                    <a class="leiaMais" href="#">Leia mais...</a>
                 </div>
             </div>
           </article>
@@ -253,6 +338,9 @@
                   </div>
                   <img class="female" src="img/macho.png" alt="gato">
                 </div>
+                <div id="mais-informacoes">
+                    <a class="leiaMais" href="#">Leia mais...</a>
+                </div>
             </div>
           </article>
 
@@ -271,11 +359,14 @@
               <p class="state">Rio de Janeiro / Rj</p>
               <div class="pai">
                   <div class="details">
-                      <div class="active porte-animal">P</div>
-                      <div class="info1">M</div>
+                      <div class="active porte-animal">M</div>
+                      <div class="info1">P</div>
                       <div class="info2">G</div>
                   </div>
                   <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                    <a class="leiaMais" href="#">Leia mais...</a>
                 </div>
             </div>
           </article>
@@ -301,6 +392,9 @@
                   </div>
                   <img class="female" src="img/macho.png" alt="gato">
                 </div>
+                <div id="mais-informacoes">
+                    <a class="leiaMais" href="#">Leia mais...</a>
+                </div>
             </div>
           </article>
 
@@ -319,11 +413,14 @@
               <p class="state">Rio de Janeiro / Rj</p>
               <div class="pai">
                   <div class="details">
-                      <div class="active porte-animal">P</div>
+                      <div class="active porte-animal">G</div>
                       <div class="info1">M</div>
-                      <div class="info2">G</div>
+                      <div class="info2">P</div>
                   </div>
                   <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                    <a class="leiaMais" href="#">Leia mais...</a>
                 </div>
             </div>
           </article>
@@ -348,6 +445,9 @@
                       <div class="info2">G</div>
                   </div>
                   <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                    <a class="leiaMais" href="#">Leia mais...</a>
                 </div>
             </div>
             </article>
@@ -378,6 +478,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src=""></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
   </body>
 </html>
