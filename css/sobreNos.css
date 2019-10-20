@@ -6,6 +6,23 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.font-titulo {
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Chilanka', cursive;
+}
+
+.logo {
+  font-family: 'Chilanka', cursive;
+  font-family: 'Cute Font', cursive;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+}
+
+.font-titulo2 {
+  font-family: 'Chilanka', cursive;
+  margin-top: 5%;
+}
+
 .img {
   background: white;
   height: auto;
@@ -28,8 +45,18 @@ main {
   height: 0;
 }
 
+.fundo a:hover {
+  background: #191818 !important;
+  color: white !important;
+}
+
 @media (max-width: 500px) {
   .fundo-branco {
     height: auto;
   }
+}
+
+.texto {
+  font-family: 'Fredoka One', cursive;
+  font-family: 'ZCOOL XiaoWei', serif;
 }

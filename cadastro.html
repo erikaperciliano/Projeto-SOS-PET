@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
     <link rel="shortcut icon" href="img/favicon.png" />
   </head>
@@ -48,25 +47,77 @@
       </nav>
       <div id="borda-black"></div>
     </header>
-    <main class="img"> 
+    <main class="img">    
+        <div class="justify-content-center container">
+            <h2>Faça o seu cadastrado</h2>    
+            <form>
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="tipoCadastro">
+                      <option selected>Escolha o Tipo de Cadastro</option>
+                      <option value="1">ONG</option>
+                      <option value="2">Protetor</option>
+                      <option value="3">Adotante</option>
+                    </select>               
+                  </div>
+                  <section id="ong"><br>             
+                   
+                    <div class="form-group">
+                      <label for="cpf">CNPJ</label>
+                      <input type="text" class="form-control" id="cpf" aria-describedby="emailHelp" onkeyup="cpfMascara(th)"
+                        required oninvalid="this.setCustomValidity('Este campo é obrigatório')">
+                    </div>
+                    <div class="form-group">
+                        <label for="razaosocial">Razão Social</label>
+                        <input type="text" class="form-control" id="razaosocial" aria-describedby="emailHelp" 
+                          required oninvalid="this.setCustomValidity('Este campo é obrigatório')">
+                      </div>
 
-      <section id="titulo">
-          <div id="fundo-branco">
-            <h2 class="text-center font-titulo fundo-branco pt-5">
-              Adote!!! Faça a diferença na vida de um animal
-            </h2><br>
-            <p class="text-center text-secondary pb-5">
-             Adoção tem o poder de transformar homem e animal em um só coração.
-            </p>
-          </div>
-      </section>    
-    <section class="container bg-light" id="pets">
-        <div class="row justify-content-center fundo-artigo">    
-              <div class="pai">                
-            </div>
-            
-          </article>
-          </article>
+                      <div class="form-group">
+                          <label for="cep">Cep</label>
+                          <input name="cep" type="text"  id="cep" value="" onblur="pesquisacep(this.value);" class="form-control"  aria-describedby="emailHelp" 
+                            required oninvalid="this.setCustomValidity('Este campo é obrigatório')">
+                        </div>
+                        <div class="form-group">
+                            <label for="rua">Rua</label>
+                            <input name="rua" type="text" id="rua" class="form-control"  aria-describedby="emailHelp" 
+                              required oninvalid="this.setCustomValidity('Este campo é obrigatório')">
+                          </div>
+                          <div class="form-group">
+                              <label for="num">Número</label>
+                              <input type="text" class="form-control" id="num" aria-describedby="emailHelp" 
+                                required oninvalid="this.setCustomValidity('Este campo é obrigatório')">
+                            </div>
+                            <div class="form-group">
+                                <label for="complemento">Complemento</label>
+                                <input type="text" class="form-control" id="complemento" aria-describedby="emailHelp" 
+                                  required oninvalid="this.setCustomValidity('Este campo é obrigatório')">
+                              </div>
+
+                          <div class="form-group">
+                              <label for="bairro">Bairro</label>
+                              <input name="bairro" type="text" class="form-control" id="bairro" aria-describedby="emailHelp" 
+                                required oninvalid="this.setCustomValidity('Este campo é obrigatório')" >
+                            </div>
+                            <div class="form-group">
+                                <label for="cidade">Cidade</label>
+                                <input name="cidade" type="text" class="form-control" id="cidade" aria-describedby="emailHelp" 
+                                  required oninvalid="this.setCustomValidity('Este campo é obrigatório')" >
+                              </div>
+                              
+                              <div class="form-group">
+                                  <label for="uf">UF</label>
+                                  <input name="uf" type="text" class="form-control" id="uf" aria-describedby="emailHelp" 
+                                    required oninvalid="this.setCustomValidity('Este campo é obrigatório')" >
+                                </div>
+                        
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                  
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                  </section>
+              </form>
         </div>
       </section>
     </main>
@@ -76,7 +127,8 @@
           >&copy; SOS PET</a
         >
       </p>
-    </footer>        
+    </footer> 
+    <script src="js/cadastro.js"></script>       
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

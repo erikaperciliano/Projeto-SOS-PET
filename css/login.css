@@ -18,6 +18,17 @@ h2 {
   user-select: none;
   /*border-bottom: 40px solid black;*/
 }
+.ajuda {
+  color: #000;
+}
+
+.ajuda:hover {
+  color: #fec118 !important;
+}
+
+.btn {
+  margin-bottom: 2%;
+}
 
 .logo {
   font-family: 'Chilanka', cursive;
