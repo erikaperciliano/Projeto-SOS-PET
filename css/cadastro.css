@@ -1,0 +1,35 @@
+body {
+  height: 0;
+}
+
+.description {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.img {
+  background: white;
+  height: auto;
+  margin-bottom: 35%;
+}
+
+main {
+  height: 10%;
+}
+
+.text-center {
+  font-size: x-large;
+}
+
+.text-secondary {
+  color: #000 !important;
+}
+
+.fundo-branco {
+  height: 0;
+}
+
+@media (max-width: 500px) {
+  .fundo-branco {
+    height: auto;
+  }
+}

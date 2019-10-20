@@ -1,0 +1,92 @@
+h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15%;
+  font-weight: bold;
+}
+
+.nav-header {
+  background-color: #ffc107 !important;
+  width: 100%;
+  padding: 30px;
+  /* height: auto; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*border-bottom: 40px solid black;*/
+}
+
+.logo {
+  font-family: 'Chilanka', cursive;
+  font-family: 'Cute Font', cursive;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+}
+
+.center {
+  font: 900 18px/120% Pbold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.center,
+a:hover {
+  text-decoration: none;
+}
+
+.cor-especial {
+  color: #191818;
+  font-weight: bold;
+  background: #fec118;
+}
+
+.navbar-header {
+  color: white;
+  font-family: 'Chilanka', cursive;
+}
+
+.fundo {
+  background: #fec118;
+  color: white;
+}
+
+.fundo a:hover {
+  background: #191818;
+  color: white;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+}
+
+#borda-black {
+  border-bottom: 40px solid black;
+  margin-top: 0;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.rodape {
+  margin-top: 30%; /*30*/
+  height: 2%;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    position: relative !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #search.home-search-area {
+    width: auto !important;
+    justify-content: center !important;
+    height: auto;
+  }
+}
