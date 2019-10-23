@@ -265,6 +265,9 @@ label {
     width: auto !important;
     justify-content: center !important;
   }
+  #borda-black {
+    margin-top: 0;
+  }
 
   search-area .arrow {
     display: none;
