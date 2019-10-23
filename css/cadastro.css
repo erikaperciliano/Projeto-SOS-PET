@@ -73,16 +73,17 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-  .logo {
-    position: relative !important;
-  }
-}
-
-@media (max-width: 500px) {
   #search.home-search-area {
     width: auto !important;
     justify-content: center !important;
     height: auto;
+  }
+  .logo {
+    position: relative !important;
+  }
+
+  .img {
+    margin-bottom: 80%;
   }
 }
 

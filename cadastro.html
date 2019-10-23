@@ -63,7 +63,7 @@
                    
                     <div class="form-group">
                       <label for="cpf">CNPJ</label>
-                      <input type="text" class="form-control" id="cpf" aria-describedby="emailHelp" onkeyup="cpfMascara(th)"
+                      <input type="text" class="form-control input-md" id="cnpj" onkeyup="FormataCnpj(this,event)" onblur="if(!validarCNPJ(this.value)){alert('CNPJ Informado é inválido'); this.value='';}" maxlength="18" ng-model="cadastro.cnpj"aria-describedby="emailHelp" name="cnpj" onkeyup="cpfMascara(th)"
                         required oninvalid="this.setCustomValidity('Este campo é obrigatório')">
                     </div>
                     <div class="form-group">
