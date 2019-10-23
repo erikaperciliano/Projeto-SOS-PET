@@ -53,6 +53,11 @@ a:hover {
   /*border-bottom: 40px solid black;*/
 }
 
+#borda-black {
+  border-bottom: 40px solid black !important;
+  margin-top: 7% !important;
+}
+
 .fundo a:hover {
   background: #191818;
   color: white;
@@ -77,6 +82,10 @@ a:hover {
     width: auto !important;
     justify-content: center !important;
     height: auto;
+  }
+  #borda-black {
+    border-bottom: 40px solid black !important;
+    margin-top: 0 !important;
   }
   .logo {
     position: relative !important;
