@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
     <link rel="shortcut icon" href="img/favicon.png" />
   </head>
@@ -51,15 +51,105 @@
         <div class="justify-content-center container">
             <h2>Faça o seu cadastrado</h2>    
             <form>
-                <div class="input-group mb-3">
+                <section id="ong"><br> 
+                  <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome"name="nome" 
+                      required oninvalid="setCustomValidity('Por favor, preencha o nome todo')"  oninput="setCustomValidity('')"onkeypress="return ApenasLetras(event,this);">
+                  </div> 
+                  <div class="form-group">
+                    <label for="cel">Número de Celular</label>
+                    <input type="text" class="form-control" id="cel"name="cel" 
+                      required oninvalid="setCustomValidity('Por favor, preencha o celular')"  oninput="setCustomValidity('')" onkeypress="$(this).mask('(00) 00000-0009')">
+                  </div> 
+                  <div class="form-group">
+                      <label for="cpf">CPF</label>
+                      <input type="text" class="form-control" id="cpf"name="cpf" 
+                        required oninvalid="setCustomValidity('Por favor, preencha o CPF')"  oninput="setCustomValidity('')" maxlength="11" placeholder="digite somente o número ex:00000000000" onblur="return verificarCPF(this.value)">
+                  </div>   
+                  <div class="form-group">
+                      <label for="identidade">RG</label>
+                      <input type="text" class="form-control" id="identidade"name="identidade" 
+                        required oninvalid="setCustomValidity('Por favor, preencha o RG')"  oninput="setCustomValidity('')"  onkeypress="$(this).mask('00.000.000 -0')">
+                  </div> 
+                  <div class="form-group">
+                      <label for="orgaoExpedidor">Orgão Expedidor</label>
+                      <input type="text" class="form-control" id="orgaoExpedidor"name="orgaoExpedidor" 
+                        required oninvalid="setCustomValidity('Por favor, preencha o Orgão Expedidor')"  oninput="setCustomValidity('')" onkeypress="return ApenasLetras(event,this);">
+                  </div> 
+                  <div class="form-group">
+                      <label for="dataEmissao">Data de Emissão</label>
+                      <input type="text" class="form-control " id="dataEmissao"name="dataEmissao" 
+                        required oninvalid="setCustomValidity('Por favor, preencha a Data de Emissão')"  oninput="setCustomValidity('')"  maxlength="10" onkeypress="dtNascimento(this)">
+                  </div> 
+                  <div class="form-group">
+                      <label for="outra_data">Data de Nascimento</label>
+                      <input type="text" class="form-control outra_data" name="outra_data" 
+                        required oninvalid="setCustomValidity('Por favor, preencha a Data de Nascimento')"   maxlength="10" onkeypress="dtNascimento(this)" oninput="setCustomValidity('')" >
+                  </div>                          
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control input-md" id="email" name="email" 
+                      required oninvalid="setCustomValidity('Por favor, preencha o seu e-mail')"   oninput="setCustomValidity('')">
+                  </div>                   
+                    <div class="form-group">
+                        <label for="cep">Cep</label>
+                        <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);" class="form-control"  aria-describedby="emailHelp" 
+                          required >
+                    </div>                   
+                    <div class="form-group">
+                          <label for="rua">Rua</label>
+                          <input name="rua" type="text" id="rua" class="form-control"  aria-describedby="emailHelp" 
+                            required>
+                    </div>
+                    <div class="form-group">
+                          <label for="num">Número</label>
+                          <input type="text" id="num" class="form-control"  aria-describedby="emailHelp" name="num"
+                          required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" onkeyup="somenteNumeros(this);">
+                   </div>
+                    <div class="form-group">
+                          <label for="complemento">Complemento</label>
+                          <input type="text" id="complemento" class="form-control" aria-describedby="emailHelp" 
+                          required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input name="bairro" type="text" id="bairro" class="form-control" aria-describedby="emailHelp" 
+                        required>
+                    </div>
+                      <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input name="cidade" id="cidade" type="text" class="form-control" aria-describedby="emailHelp" 
+                        required>
+                    </div>
+                            
+                    <div class="form-group">
+                        <label for="uf">UF</label>
+                        <input name="uf" type="text" id="uf" class="form-control" aria-describedby="emailHelp" 
+                        required>
+                    </div>
+                    <div class="form-group">
+                      <label for="login">Login</label>
+                      <input type="text" class="form-control" name="login" required oninvalid="setCustomValidity('Por favor, crie o seu login')"  oninput="setCustomValidity('')"> 
+                    </div>
+                    <div class="form-group">
+                      <label for="senha">Senha</label>
+                      <input type="password" class="form-control" id="senha" required oninvalid="setCustomValidity('Por favor, crie a sua senha')"  oninput="setCustomValidity('')">
+                    </div>
+                
+                  <button type="submit" class="btn btn-warning">Enviar</button>
+                </section>
+
+               <!--<div class="input-group mb-3">
                     <select class="custom-select" id="tipoCadastro">
                       <option selected>Escolha o Tipo de Cadastro</option>
                       <option value="1">ONG</option>
                       <option value="2">Protetor</option>
                       <option value="3">Adotante</option>
                     </select>               
-                  </div>
-                  <section id="ong"><br>             
+                  </div>-->
+                  <!--<section id="ong"><br>             
                    
                     <div class="form-group">
                       <label for="cpf">CNPJ</label>
@@ -116,7 +206,7 @@
                     </div>
                   
                     <button type="submit" class="btn btn-warning">Submit</button>
-                  </section>
+                  </section>-->
               </form>
         </div>
       </section>
@@ -146,7 +236,7 @@
     ></script>
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
   </body>
 </html>
 

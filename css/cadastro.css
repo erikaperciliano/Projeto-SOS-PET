@@ -40,6 +40,9 @@ a:hover {
   background: #fec118;
   color: white;
 }
+.nav-header a:hover {
+  background: #ffc107 !important;
+}
 
 .nav-header {
   background-color: #ffc107 !important;
@@ -55,7 +58,7 @@ a:hover {
 
 #borda-black {
   border-bottom: 40px solid black !important;
-  margin-top: 7% !important;
+  margin-top: 5% !important;
 }
 
 .fundo a:hover {
@@ -95,7 +98,7 @@ a:hover {
     margin-bottom: 80%;
   }
 }
-
+/*
 #ong {
   display: none;
-}
+}*/

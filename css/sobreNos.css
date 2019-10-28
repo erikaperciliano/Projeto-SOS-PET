@@ -1,62 +1,130 @@
-body {
-  height: 0;
+h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15%;
+  font-weight: bold;
 }
 
-.description {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.font-titulo {
-  /*font-family: 'Pacifico', cursive;*/
+.navbar-header {
+  color: white;
   font-family: 'Chilanka', cursive;
 }
 
 .logo {
-  font-family: 'Chilanka', cursive;
-  font-family: 'Cute Font', cursive;
   font-family: 'Anton', sans-serif;
   font-size: 30px;
+}
+
+.center {
+  font: 900 18px/120% Pbold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.center,
+a:hover {
+  text-decoration: none;
+}
+
+.cor-especial {
+  color: #191818;
+  font-weight: bold;
+  background: #fec118;
+}
+
+.fundo {
+  background: #fec118;
+  color: white;
+}
+
+.fundo-branco {
+  margin-top: 5%;
+}
+.nav-header a:hover {
+  background: #ffc107 !important;
+}
+
+.nav-header {
+  background-color: #ffc107 !important;
+  width: 100%;
+  padding: 30px;
+  /* height: auto; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*border-bottom: 40px solid black;*/
+}
+
+#borda-black {
+  border-bottom: 40px solid black !important;
+  margin-top: 5% !important;
+}
+
+.fundo a:hover {
+  background: #191818;
+  color: white;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.rodape {
+  margin-top: 30%; /*30*/
+  height: 2%;
+}
+
+body {
+  height: 0% !important;
+}
+.font-titulo {
+  /*font-family: 'Pacifico', cursive;
+  font-family: 'Chilanka', cursive;*/
+  margin-bottom: 0;
 }
 
 .font-titulo2 {
   font-family: 'Chilanka', cursive;
   margin-top: 5%;
-}
-
-.img {
-  background: white;
-  height: auto;
-  margin-bottom: 50%;
-}
-
-main {
-  height: 10%;
-}
-
-.text-center {
   font-size: x-large;
 }
 
-.text-secondary {
-  color: #000 !important;
-}
-
-.fundo-branco {
-  height: 0;
-}
-
-.fundo a:hover {
-  background: #191818 !important;
-  color: white !important;
+.paragrafo {
+  font-size: large;
 }
 
 @media (max-width: 500px) {
-  .fundo-branco {
+  #search.home-search-area {
+    width: auto !important;
+    justify-content: center !important;
     height: auto;
   }
-}
+  .font-titulo2 {
+    font-size: large !important;
+    margin-top: 7%;
+  }
 
-.texto {
-  font-family: 'Fredoka One', cursive;
-  font-family: 'ZCOOL XiaoWei', serif;
+  #borda-black {
+    border-bottom: 40px solid black !important;
+    margin-top: 0 !important;
+  }
+  .logo {
+    position: relative !important;
+  }
+
+  .img {
+    margin-bottom: 80%;
+  }
 }
+/*
+#ong {
+  display: none;
+}*/
