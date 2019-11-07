@@ -21,28 +21,30 @@
   </head>
   <body>          
       <nav class="navbar navbar-expand-lg justify-content-center  fixed-top nav-header btn-warning logo navbar-toggler" data-toggle="collapse nav">
-          <ul class="center navbar-nav  btn-warning">
-            <a class="navbar font-titulo cor-especial btn-warning logo" href="index.html"><span class="responsible">SOS PET</span></a>
+        <ul class="center navbar-nav  btn-warning">
+          <a class="navbar font-titulo cor-especial btn-warning logo" href="#"><span class="responsible">SOS PET</span></a>
 
-            <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle navbar-header btn-warning" data-toggle="dropdown" href="#" role="button"
-                  aria-haspopup="true" aria-expanded="false responssible-inicio">Início</a>
-      
-                <div class="dropdown-menu fundo">
-                  <a class="dropdown-item nav-item nav-link" href="sobreNos.html">Sobre Nós</a>
-                  <a class="dropdown-item nav-item nav-link" href="#">Leis de adoção</a>
-                  <a class="dropdown-item nav-item nav-link" href="#">Leis Contra Maus Tratos</a>
-                  <a class="dropdown-item nav-item nav-link" href="#">Contatos</a>
-                  
-                </div>
-              </li>
-            <li class="nav-item">
-                <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="#">Adote</a>
+          <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle navbar-header btn-warning" data-toggle="dropdown" href="#" role="button"
+                aria-haspopup="true" aria-expanded="false responssible-inicio">Início</a>
+    
+              <div class="dropdown-menu fundo">
+                <a class="dropdown-item nav-item nav-link" href="sobreNos.html">Sobre Nós</a>
+                <a class="dropdown-item nav-item nav-link" href="#">Leis de adoção</a>
+                <a class="dropdown-item nav-item nav-link" href="#">Leis Contra Maus Tratos</a>
+                <a class="dropdown-item nav-item nav-link" href="#">Contatos</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item nav-item nav-link" href="#">Adote</a>
+                <a class="dropdown-item nav-item nav-link" href="#">Ajude</a>
+              </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude" href="#">Ajude</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+              <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="cadastro.html">Cadastre-se</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude" href="login.html">Login</a>
+          </li>
+        </ul>
         </div>
       </nav>
       <div id="borda-black"></div>
@@ -50,95 +52,95 @@
     <main class="img">    
         <div class="justify-content-center container">
             <h2>Faça o seu cadastrado</h2>    
-            <form>
+            <form onsubmit="check_form()">
                 <section id="ong"><br> 
                   <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control" id="nome"name="nome" 
+                    <input type="text" class="form-control obrigatorio" id="nome"name="nome" 
                       required oninvalid="setCustomValidity('Por favor, preencha o nome todo')"  oninput="setCustomValidity('')"onkeypress="return ApenasLetras(event,this);">
                   </div> 
                   <div class="form-group">
                     <label for="cel">Número de Celular</label>
-                    <input type="text" class="form-control" id="cel"name="cel" 
+                    <input type="text" class="form-control obrigatorio" id="cel"name="cel" 
                       required oninvalid="setCustomValidity('Por favor, preencha o celular')"  oninput="setCustomValidity('')" onkeypress="$(this).mask('(00) 00000-0009')">
                   </div> 
                   <div class="form-group">
                       <label for="cpf">CPF</label>
-                      <input type="text" class="form-control" id="cpf"name="cpf" 
+                      <input type="text" class="form-control obrigatorio" id="cpf"name="cpf" 
                         required oninvalid="setCustomValidity('Por favor, preencha o CPF')"  oninput="setCustomValidity('')" maxlength="11" placeholder="digite somente o número ex:00000000000" onblur="return verificarCPF(this.value)">
                   </div>   
                   <div class="form-group">
                       <label for="identidade">RG</label>
-                      <input type="text" class="form-control" id="identidade"name="identidade" 
+                      <input type="text" class="form-control obrigatorio" id="identidade"name="identidade" 
                         required oninvalid="setCustomValidity('Por favor, preencha o RG')"  oninput="setCustomValidity('')"  onkeypress="$(this).mask('00.000.000 -0')">
                   </div> 
                   <div class="form-group">
                       <label for="orgaoExpedidor">Orgão Expedidor</label>
-                      <input type="text" class="form-control" id="orgaoExpedidor"name="orgaoExpedidor" 
+                      <input type="text" class="form-control obrigatorio" id="orgaoExpedidor"name="orgaoExpedidor" 
                         required oninvalid="setCustomValidity('Por favor, preencha o Orgão Expedidor')"  oninput="setCustomValidity('')" onkeypress="return ApenasLetras(event,this);">
                   </div> 
                   <div class="form-group">
                       <label for="dataEmissao">Data de Emissão</label>
-                      <input type="text" class="form-control " id="dataEmissao"name="dataEmissao" 
+                      <input type="text" class="form-control obrigatorio" id="dataEmissao"name="dataEmissao" 
                         required oninvalid="setCustomValidity('Por favor, preencha a Data de Emissão')"  oninput="setCustomValidity('')"  maxlength="10" onkeypress="dtNascimento(this)">
                   </div> 
                   <div class="form-group">
                       <label for="outra_data">Data de Nascimento</label>
-                      <input type="text" class="form-control outra_data" name="outra_data" 
+                      <input type="text" class="form-control outra_data obrigatorio" name="outra_data" 
                         required oninvalid="setCustomValidity('Por favor, preencha a Data de Nascimento')"   maxlength="10" onkeypress="dtNascimento(this)" oninput="setCustomValidity('')" >
                   </div>                          
                   <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" class="form-control input-md" id="email" name="email" 
+                    <input type="email" class="form-control input-md obrigatorio" id="email" name="email" 
                       required oninvalid="setCustomValidity('Por favor, preencha o seu e-mail')"   oninput="setCustomValidity('')">
                   </div>                   
                     <div class="form-group">
                         <label for="cep">Cep</label>
-                        <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);" class="form-control"  aria-describedby="emailHelp" 
+                        <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);" class="form-control obrigatorio"  aria-describedby="emailHelp" 
                           required >
                     </div>                   
                     <div class="form-group">
                           <label for="rua">Rua</label>
-                          <input name="rua" type="text" id="rua" class="form-control"  aria-describedby="emailHelp" 
+                          <input name="rua" type="text" id="rua" class="form-control obrigatorio"  aria-describedby="emailHelp" 
                             required>
                     </div>
                     <div class="form-group">
                           <label for="num">Número</label>
-                          <input type="text" id="num" class="form-control"  aria-describedby="emailHelp" name="num"
+                          <input type="text" id="num" class="form-control obrigatorio"  aria-describedby="emailHelp" name="num"
                           required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" onkeyup="somenteNumeros(this);">
                    </div>
                     <div class="form-group">
                           <label for="complemento">Complemento</label>
-                          <input type="text" id="complemento" class="form-control" aria-describedby="emailHelp" 
+                          <input type="text" id="complemento" class="form-control obrigatorio" aria-describedby="emailHelp" 
                           required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" >
                     </div>
 
                     <div class="form-group">
                         <label for="bairro">Bairro</label>
-                        <input name="bairro" type="text" id="bairro" class="form-control" aria-describedby="emailHelp" 
+                        <input name="bairro" type="text" id="bairro" class="form-control obrigatorio" aria-describedby="emailHelp" 
                         required>
                     </div>
                       <div class="form-group">
                         <label for="cidade">Cidade</label>
-                        <input name="cidade" id="cidade" type="text" class="form-control" aria-describedby="emailHelp" 
+                        <input name="cidade" id="cidade" type="text" class="form-control obrigatorio" aria-describedby="emailHelp" 
                         required>
                     </div>
                             
                     <div class="form-group">
                         <label for="uf">UF</label>
-                        <input name="uf" type="text" id="uf" class="form-control" aria-describedby="emailHelp" 
+                        <input name="uf" type="text" id="uf" class="form-control obrigatorio" aria-describedby="emailHelp" 
                         required>
                     </div>
                     <div class="form-group">
                       <label for="login">Login</label>
-                      <input type="text" class="form-control" name="login" required oninvalid="setCustomValidity('Por favor, crie o seu login')"  oninput="setCustomValidity('')"> 
+                      <input type="text" class="form-control obrigatorio" name="login" required oninvalid="setCustomValidity('Por favor, crie o seu login')"  oninput="setCustomValidity('')"> 
                     </div>
                     <div class="form-group">
                       <label for="senha">Senha</label>
-                      <input type="password" class="form-control" id="senha" required oninvalid="setCustomValidity('Por favor, crie a sua senha')"  oninput="setCustomValidity('')">
+                      <input type="password" class="form-control obrigatorio" id="senha" required oninvalid="setCustomValidity('Por favor, crie a sua senha')"  oninput="setCustomValidity('')">
                     </div>
                 
-                  <button type="submit" class="btn btn-warning">Enviar</button>
+                  <button type="submit" class="btn btn-warning" id="botao" >Enviar</button>
                 </section>
 
                <!--<div class="input-group mb-3">

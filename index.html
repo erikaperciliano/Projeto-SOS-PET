@@ -41,12 +41,17 @@
             <li class="nav-item">
                 <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="cadastro.html">Cadastre-se</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude" href="login.html">Login</a>
-            </li>
+              <li class="nav-item">
+                  <div class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude" data-toggle="modal" data-target="#exampleModalCenter" >
+                    Login</div>
+              </li>
           </ul>
         </div>
       </nav>
+       <!-- Button trigger modal 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Launch demo modal
+        </button>-->
       <div id="borda-black"></div>
     </header>
     <main class="img"> 
@@ -142,113 +147,9 @@
     
             <div location-data="city">
               <select class="form-control" name="pet_query[city_id_eq]" id="pet_query_city_id_eq">
-                <option value="">Bairros</option>
-                <option value="">São Cristóvão</option>
-                <option value="">Benfica</option>
-                <option value="">Caju</option>
-                <option value="">Catumbi</option>
-                <option value="">Centro</option>
-                <option value="">Cidade Nova</option>
-                <option value="">Estácio</option>
-                <option value="">Gamboa</option>
-                <option value="">Lapa</option>
-                <option value="">Mangueira</option>
-                <option value="">Paquetá</option>
-                <option value="">Rio Comprido</option>
-                <option value="">Santa Teresa</option>
-                <option value="">Santo Cristo</option>
-                <option value="">Saúde</option>
-                <option value="">Vasco da Gama</option>
-                <option value="">Botafogo</option>
-                <option value="">Catete</option>
-                <option value="">Copacabana</option>
-                <option value="">Cosme Velho</option>
-                <option value="">Flamengo</option>
-                <option value="">Gávea</option>
-                <option value="">Glória</option>
-                <option value="">Humaitá</option>
-                <option value="">Ipanema</option>
-                <option value="">Jardim Botânico</option>
-                <option value="">Lagoa</option>
-                <option value="">Laranjeiras</option>
-                <option value="">Leblon</option>
-                <option value="">Leme</option>
-                <option value="">São Conrado</option>
-                <option value="">Urca</option>
-                <option value="">Vidigal</option>
-                <option value="">Anil</option>
-                <option value="">Barra da Tijuca</option>
-                <option value="">Camorim</option>
-                <option value="">Cidade de Deus</option>
-                <option value="">Curicica</option>
-                <option value="">Frequesia</option>
-                <option value="">Gardênia Azul</option>
-                <option value="">Grumari</option>
-                <option value="">Itanhangá</option>
-                <option value="">Jacarepaguá</option>
-                <option value="">Joá</option>
-                <option value="">Praça Seca</option>
-                <option value="">Pechincha</option>
-                <option value="">Recreio dos Bandeirantes</option>
-                <option value="">Tanque</option>
-                <option value="">Taquara</option>
-                <option value="">Vargem Grande</option>
-                <option value="">Vargem Pequena</option>
-                <option value="">Vila Valqueire</option>
-                <option value="">Jardim Sulacap</option>
-                <option value="">Bangu</option>
-                <option value="">Campo dos Afonsos</option>
-                <option value="">Deodoro</option>
-                <option value="">Gericinó</option>
-                <option value="">Magalhães Bastos</option>
-                <option value="">Padre Miguel</option>
-                <option value="">Realengo</option>
-                <option value="">Santíssimo</option>
-                <option value="">Senador Camará</option>
-                <option value="">Vila Kennedy</option>
-                <option value="">Vila Militar</option>
-                <option value="">Barra de Guaratiba</option>
-                <option value="">Campo Grande</option>
-                <option value="">Cosmo</option>
-                <option value="">Guaratiba</option>
-                <option value="">Inhoaíba</option>
-                <option value="">Paciência</option>
-                <option value="">Pedra de Guaratiba</option>
-                <option value="">Santa Cruz</option>
-                <option value="">Senador Vasconcelos</option>
-                <option value="">Sepetiba</option>
-                <option value="">Alto da Boa Vista</option>
-                <option value="">Andaraí
-                <option value="">Grajaú</option>
-                <option value="">Maracanã</option>
-                <option value="">Praça da Bandeira</option>
-                <option value="">Tijuca</option>
-                <option value="">Vila Isabel</option>
-                <option value="">Abolição</option>
-                <option value="">Água Santa</option>
-                <option value="">Cachambi</option>
-                <option value="">Del Castilho</option>
-                <option value="">Encantado</option>
-                <option value="">Engenho de Dentro</option>
-                <option value="">Engenho Novo</option>
-                <option value="">Jacaré</option>
-                <option value="">Jacarezinho</option>
-                <option value="">Lins de Vasconcelos</option>
-                <option value="">Manguinhos</option>
-                <option value="">Maria da Graça</option>
-                <option value="">Méier</option>
-                <option value="">Piedade</option>
-                <option value="">Pilares</option>                
-                <option value="">Bomsucesso</option>
-                <option value="">Olaria</option>
-                <option value="">Anchieta</option>
-                <option value="">Bento Ribeiro</option>
-                <option value="">Campinho</option>
-                <option value="">Cascadura</option>
-                <option value="">Coelho Neto</option>
-                <option value="">Colégio</option>
-                <option value="">Complexo do Alemão</option>
-                <option value="">Benfica</option>
+                <option value="">Sexo</option>
+                <option value="">Fêmea</option>
+                <option value="">Macho</option>               
                 </option>
               </select>
             </div>
@@ -534,6 +435,39 @@
         </div>
       </section>
     </main>
+  
+
+<!-- Modal --> 
+  <div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="justify-content-center container">
+              <h2>Já sou cadastrado</h2>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="login">Login</label>
+                    <input type="email" class="form-control" name="login" required placeholder="digite seu login" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="digite sua senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Lembrar minha senha</label>
+                </div>
+                <button type="submit" class="btn btn-warning">Entrar</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-warning">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
     <footer class="bg-secondary p-3 rodape">
       <p class="text-light m-0 text-center">
         <a class="text-light" href="mailto:email@frutafruto.com.br"
