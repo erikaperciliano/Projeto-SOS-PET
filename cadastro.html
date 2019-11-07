@@ -22,7 +22,7 @@
   <body>          
       <nav class="navbar navbar-expand-lg justify-content-center  fixed-top nav-header btn-warning logo navbar-toggler" data-toggle="collapse nav">
         <ul class="center navbar-nav  btn-warning">
-          <a class="navbar font-titulo cor-especial btn-warning logo" href="#"><span class="responsible">SOS PET</span></a>
+          <a class="navbar font-titulo cor-especial btn-warning logo" href="index.html"><span class="responsible">SOS PET</span></a>
 
           <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle navbar-header btn-warning" data-toggle="dropdown" href="#" role="button"
@@ -42,8 +42,10 @@
               <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="cadastro.html">Cadastre-se</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude" href="login.html">Login</a>
-          </li>
+            <div class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude" data-toggle="modal" data-target="#exampleModalCenter" >
+              Login
+            </div>
+        </li>
         </ul>
         </div>
       </nav>
@@ -51,7 +53,15 @@
     </header>
     <main class="img">    
         <div class="justify-content-center container">
-            <h2>Faça o seu cadastrado</h2>    
+            <h2>Faça o seu cadastrado</h2>          
+            <div class="input-group mb-3" required>
+              <select class="custom-select" id="tipoCadastro">
+                <option selected>Escolha o Tipo de Cadastro</option>
+                <option value="1">ONG</option>
+                <option value="2">Doador</eoption>
+                <option value="3">Adotante</option>
+              </select>               
+            </div>  
             <form onsubmit="check_form()">
                 <section id="ong"><br> 
                   <div class="form-group">
@@ -78,12 +88,7 @@
                       <label for="orgaoExpedidor">Orgão Expedidor</label>
                       <input type="text" class="form-control obrigatorio" id="orgaoExpedidor"name="orgaoExpedidor" 
                         required oninvalid="setCustomValidity('Por favor, preencha o Orgão Expedidor')"  oninput="setCustomValidity('')" onkeypress="return ApenasLetras(event,this);">
-                  </div> 
-                  <div class="form-group">
-                      <label for="dataEmissao">Data de Emissão</label>
-                      <input type="text" class="form-control obrigatorio" id="dataEmissao"name="dataEmissao" 
-                        required oninvalid="setCustomValidity('Por favor, preencha a Data de Emissão')"  oninput="setCustomValidity('')"  maxlength="10" onkeypress="dtNascimento(this)">
-                  </div> 
+                  </div>                  
                   <div class="form-group">
                       <label for="outra_data">Data de Nascimento</label>
                       <input type="text" class="form-control outra_data obrigatorio" name="outra_data" 
@@ -142,7 +147,6 @@
                 
                   <button type="submit" class="btn btn-warning" id="botao" >Enviar</button>
                 </section>
-
                <!--<div class="input-group mb-3">
                     <select class="custom-select" id="tipoCadastro">
                       <option selected>Escolha o Tipo de Cadastro</option>
@@ -213,6 +217,35 @@
         </div>
       </section>
     </main>
+    <!-- Modal --> 
+<div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="justify-content-center container">
+            <h2 class="logar">Já sou cadastrado</h2>
+      <div class="modal-body">
+          <form>
+              <div class="form-group">
+                  <label for="login">Login</label>
+                  <input type="email" class="form-control input-login" name="login" required placeholder="digite seu login" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control input-login" id="exampleInputPassword1" required placeholder="digite sua senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label lembra-senha" for="exampleCheck1">Lembrar minha senha</label>
+              </div>
+             <button type="submit" class="btn btn-warning  entrar-login">Entrar</button>
+              <button type="button" class="btn btn-warning sair-login" data-dismiss="modal">Fechar</button>  
+            </form><br>
+            <a class="ajuda" href="cadastro.html">Não sou cadastrado</a>                       
+      </div>
+    </div>
+  </div>
+</div>
+</div>
     <footer class="bg-secondary p-3 rodape">
       <p class="text-light m-0 text-center">
         <a class="text-light" href="mailto:email@frutafruto.com.br"

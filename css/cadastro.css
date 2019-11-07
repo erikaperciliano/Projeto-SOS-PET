@@ -102,3 +102,54 @@ a:hover {
 #ong {
   display: none;
 }*/
+/*CSS do MODAl*/
+.ajuda {
+  color: #000;
+}
+
+.entrar {
+  margin-left: 65%;
+}
+
+label {
+  margin: 0 0px 0 0;
+  font-size: 15px;
+  display: inline;
+}
+
+.input-login {
+  margin-top: 4%;
+}
+
+.entrar-login,
+.sair-login {
+  margin-top: 15px;
+}
+.entrar-login :hover {
+  color: #fff;
+}
+.ajuda:hover {
+  color: #fec118 !important;
+}
+
+input[type='checkbox' i] {
+  background-color: initial;
+  cursor: default;
+  -webkit-appearance: checkbox;
+  box-sizing: border-box;
+  padding: initial;
+  border: initial;
+}
+
+.logar {
+  font-family: 'Fredoka One', cursive;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15%;
+  font-weight: bold;
+}
+
+.botao-login :hover {
+  background: #fec118 !important;
+}
