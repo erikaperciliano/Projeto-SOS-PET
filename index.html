@@ -48,10 +48,6 @@
           </ul>
         </div>
       </nav>
-       <!-- Button trigger modal 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-          Launch demo modal
-        </button>-->
       <div id="borda-black"></div>
     </header>
     <main class="img"> 
@@ -435,39 +431,36 @@
         </div>
       </section>
     </main>
-  
 
 <!-- Modal --> 
-  <div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-          <div class="justify-content-center container">
-              <h2>Já sou cadastrado</h2>
-        <div class="modal-body">
-            <form>
-                <div class="form-group">
-                    <label for="login">Login</label>
-                    <input type="email" class="form-control" name="login" required placeholder="digite seu login" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="digite sua senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
-                </div>
-                <div class="form-group form-check">
+<div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="justify-content-center container">
+            <h2 class="logar">Já sou cadastrado</h2>
+      <div class="modal-body">
+          <form>
+              <div class="form-group">
+                  <label for="login">Login</label>
+                  <input type="email" class="form-control input-login" name="login" required placeholder="digite seu login" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control input-login" id="exampleInputPassword1" required placeholder="digite sua senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
+              </div>
+              <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Lembrar minha senha</label>
-                </div>
-                <button type="submit" class="btn btn-warning">Entrar</button>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-warning">Save changes</button>
-        </div>
+                  <label class="form-check-label lembra-senha" for="exampleCheck1">Lembrar minha senha</label>
+              </div>
+             <button type="submit" class="btn btn-warning modal-body entrar-login">Entrar</button>
+              <button type="button" class="btn btn-warning sair-login" data-dismiss="modal">Fechar</button>  
+            </form><br>
+            <a class="ajuda" href="cadastro.html">Não sou cadastrado</a>                       
       </div>
     </div>
   </div>
-  </div>
+</div>
+</div>
     <footer class="bg-secondary p-3 rodape">
       <p class="text-light m-0 text-center">
         <a class="text-light" href="mailto:email@frutafruto.com.br"
