@@ -1,0 +1,353 @@
+h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15%;
+  font-weight: bold;
+}
+
+.navbar-header {
+  color: white;
+  font-family: 'Chilanka', cursive;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+}
+
+.center {
+  font: 900 18px/120% Pbold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.center,
+a:hover {
+  text-decoration: none;
+}
+
+.cor-especial {
+  color: #191818;
+  font-weight: bold;
+  background: #fec118;
+}
+
+.fundo {
+  background: #fec118;
+  color: white;
+}
+
+.fundo-branco {
+  margin-top: 5%;
+}
+.nav-header a:hover {
+  background: #ffc107 !important;
+}
+
+.nav-header {
+  background-color: #ffc107 !important;
+  width: 100%;
+  padding: 30px;
+  /* height: auto; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*border-bottom: 40px solid black;*/
+}
+
+#borda-black {
+  border-bottom: 40px solid black !important;
+  margin-top: 5% !important;
+}
+
+.fundo a:hover {
+  background: #191818;
+  color: white;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.rodape {
+  margin-top: 30%; /*30*/
+  height: 2%;
+}
+
+body {
+  height: 0% !important;
+}
+.font-titulo {
+  /*font-family: 'Pacifico', cursive;
+    font-family: 'Chilanka', cursive;*/
+  margin-bottom: 0;
+}
+
+.font-titulo2 {
+  font-family: 'Chilanka', cursive;
+  margin-top: 5%;
+  font-size: x-large;
+}
+
+.paragrafo {
+  font-size: large;
+}
+
+@media (max-width: 500px) {
+  #search.home-search-area {
+    width: auto !important;
+    justify-content: center !important;
+    height: auto;
+  }
+  .font-titulo2 {
+    font-size: large !important;
+    margin-top: 7%;
+  }
+
+  #borda-black {
+    border-bottom: 40px solid black !important;
+    margin-top: 0 !important;
+  }
+  .logo {
+    position: relative !important;
+  }
+
+  .img {
+    margin-bottom: 80%;
+  }
+  img {
+    vertical-align: middle;
+    border: 0;
+  }
+  .row .col {
+    float: none !important;
+  }
+  .filter {
+    background: #fff;
+    position: relative !important;
+    z-index: none !important;
+    width: 0% !important;
+  }
+  .home-search-area .arrow {
+    width: 128px;
+    margin-left: -10% !important;
+    margin-top: 20px;
+    position: absolute;
+  }
+  .arrow {
+    left: -5% !important;
+  }
+  #home-search-button {
+    margin-left: 8% !important;
+  }
+}
+
+/*Novas alterações*/
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.home-search-area .btn-lined,
+.home-search-area .btn-lined:hover {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+
+.btn-lined,
+.btn-lined:hover {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 9px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.home-search-area h1 {
+  color: #000;
+  opacity: 0.95;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.home-search-area {
+  background-color: #ffc107;
+  padding: 30px 44px 44px;
+  text-align: center;
+  margin-bottom: 2%;
+  z-index: 1;
+  position: relative;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 1000px;
+}
+
+.home-search-area .arrow {
+  width: 128px;
+  margin-left: -318px;
+  margin-top: 20px;
+  position: absolute;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-lined,
+.home-search-area .btn-lined:hover {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+
+.btn-secundary {
+  color: #ffffff;
+  background-color: #613488;
+  border-color: #613488;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn-lined,
+.btn-lined:hover {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 9px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.foto-animais {
+  height: 300px;
+}
+
+/*testes*/
+
+.levantaimg {
+  position: relative;
+}
+.levantaimg:hover {
+  top: -2px;
+  border-bottom: 2px solid #999;
+}
+
+.demo-3 {
+  position: relative;
+  /*width: 300px;
+  height: 200px;*/
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+}
+.demo-3 figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  margin-left: -50px;
+}
+.demo-3 figure img {
+  display: block;
+  position: relative;
+  z-index: 10;
+  margin: -15px 0;
+}
+.demo-3 figure figcaption {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.demo-3 figure h2 {
+  font-family: 'Lato';
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+.demo-3 figure p {
+  display: block;
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 18px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+}
+.demo-3 figure figcaption {
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%;*/
+  padding: 29px 44px;
+  background-color: #f4aa24;
+  text-align: center;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.demo-3 figure img {
+  backface-visibility: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.demo-3 figure:hover img,
+figure.hover img {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.demo-3 figure:hover figcaption,
+figure.hover figcaption {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+/*Usuário*/
+.com-icone {
+  content: '';
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-color: #ffc107;
+  background-size: 50% 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 10%;
+}

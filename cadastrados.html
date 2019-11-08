@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOS PET</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Lobster|Noto+Serif&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Handlee|Noto+Serif&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Chilanka|Cute+Font&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/cadastrados.css"/>
+    <link rel="shortcut icon" href="img/favicon.png" />
+  </head>
+  <body>          
+    <header class="menu">
+      <nav class="navbar navbar-expand-lg justify-content-center  fixed-top nav-header btn-warning logo navbar-toggler" data-toggle="collapse nav">
+          <ul class="center navbar-nav  btn-warning">
+            <a class="navbar font-titulo cor-especial btn-warning logo" href="index.html"><span class="responsible">SOS PET</span></a>
+
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle navbar-header btn-warning" data-toggle="dropdown" href="#" role="button"
+                  aria-haspopup="true" aria-expanded="false responssible-inicio">Início</a>
+      
+                <div class="dropdown-menu fundo">
+                  <a class="dropdown-item nav-item nav-link" href="sobreNos.html">Sobre Nós</a>
+                  <a class="dropdown-item nav-item nav-link" href="#">Leis de adoção</a>
+                  <a class="dropdown-item nav-item nav-link" href="#">Leis Contra Maus Tratos</a>
+                  <a class="dropdown-item nav-item nav-link" href="#">Contatos</a>
+                  <a class="dropdown-item nav-item nav-link" href="#">Adote</a>
+                  <a class="dropdown-item nav-item nav-link" href="#">Ajude</a>
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="#">Lista de Animais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="#">Minha Conta</a>
+          </li>
+          </ul>
+          
+      <section>
+        <img src="img/user.png" class="com-icone">
+      </section>
+        </div>
+      </nav>
+
+
+
+      <div id="borda-black"></div>
+    </header>
+    <main class="img"> 
+      <section id="titulo">
+          <div id="fundo-branco">
+            <h2 class="text-center font-titulo fundo-branco pt-5">
+              Animais Para Adoção!!! 
+            </h2><br>
+            <p class="text-center paragrafo pb-5">
+             O poder de transformar homem e animal em um só coração.
+            </p>
+          </div>
+      </section>  <section id="search" class="home-search-area  justify-content-center container">
+        <h1>Procurando por um amigo? Encontre-o aqui!</h1>
+        <form class="new_pet_query" id="new_pet_query" action="/" accept-charset="UTF-8" data-remote="true" method="get">
+          <input name="utf8" type="hidden" value="✓">
+          <div class="row">
+            <div class="col-md-6">
+              <select class="form-control" name="pet_query[specie_eq]" id="pet_query_specie_eq">
+                <option value="">Espécie</option>
+                <option value="cat">Gato</option>
+                <option value="dog">Cachorro</option>
+              </select>
+              <select class="form-control" name="pet_query[size_eq]" id="pet_query_size_eq">
+                <option value="">Porte</option>
+                <option value="small">Pequeno</option>
+                <option value="medium">Médio</option>
+                <option value="big">Grande</option>
+              </select>
+            </div>
+            <div class="col-md-6" id="location-box">
+              <div location-data="state">
+                <select class="form-control" name="pet_query[state_id_eq]" id="pet_query_state_id_eq">
+                  <option value="">Estado</option>
+                  <option value="19">Rio de Janeiro</option>               
+                </select>
+              </div>
+      
+              <div location-data="city">
+                <select class="form-control" name="pet_query[city_id_eq]" id="pet_query_city_id_eq">
+                  <option value="">Sexo</option>
+                  <option value="">Fêmea</option>
+                  <option value="">Macho</option>               
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+      
+          <input type="submit" name="commit" value="Procurar" class="btn btn-secundary btn-lined" id="home-search-button">
+          <img class="arrow" src="img/seta.png"
+            alt="Arrow3 d09bf3fa80c9262d9ba839dca5ba170646206bae69edd303e9bbe9e0c3503a92" style="">
+        </form>
+    </section>
+    <div class="container justify-content-center">                    
+     </div>
+
+    </main>  
+    <footer class="bg-secondary p-3 rodape">
+      <p class="text-light m-0 text-center">
+        <a class="text-light" href="mailto:email@frutafruto.com.br"
+          >&copy; SOS PET</a
+        >
+      </p>
+    </footer>        
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+  </body>
+</html>
+
