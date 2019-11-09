@@ -660,3 +660,12 @@ input[type='checkbox' i] {
 .botao-login :hover {
   background: #fec118 !important;
 }
+
+a {
+  color: #fff;
+}
+
+.entrar-login {
+  margin-left: 15% !important;
+  background: #fec118 !important;
+}
