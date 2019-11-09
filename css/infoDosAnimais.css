@@ -194,16 +194,24 @@ input[type='checkbox' i] {
 @media (max-width: 500px) {
   .imagem-carrosel1 {
     object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
-    object-position: 0 34%; /*eixos: x e y*/
+    object-position: 90% 0%; /*eixos: x e y*/
   }
 
   .imagem-carrosel2 {
     object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
-    object-position: 98% 0%; /*eixos: x e y*/
+    object-position: 50% 0%; /*eixos: x e y*/
     height: 400px;
   }
   .imagem-carrosel3 {
     object-fit: cover;
-    object-position: 0 50%;
+    object-position: 30% 0%;
   }
+}
+
+.descricao {
+  justify-content: center;
+}
+
+h4 {
+  text-align: center;
 }
