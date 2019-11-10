@@ -219,6 +219,10 @@ h3 {
   text-align: center;
 }
 
+.hover-login:hover {
+  background: #fec118;
+}
+
 .lista-animais {
   color: white;
   margin-top: -3%;

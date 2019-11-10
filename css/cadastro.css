@@ -157,3 +157,7 @@ input[type='checkbox' i] {
 #botao {
   /*width: 20%;*/
 }
+
+.hover-cadastro:hover {
+  background: #fec118 !important;
+}
