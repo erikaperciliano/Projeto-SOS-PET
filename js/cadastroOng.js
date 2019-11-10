@@ -1,75 +1,25 @@
-/*var element = document.querySelector('#tipoCadastro');
-element.addEventListener('change', myfunction);
-
-function myfunction() {
-  if (element.value === '1') {
-    $('#ong').css('display', 'block');
-  }
-}*/
-
-//Valida campo Data Nascimento
-function dtNascimento(val) {
-  var pass = val.value;
-  var expr = /[0123456789]/;
-
-  for (i = 0; i < pass.length; i++) {
-    // charAt -> retorna o caractere posicionado no índice especificado
-    var lchar = val.value.charAt(i);
-    var nchar = val.value.charAt(i + 1);
-
-    if (i == 0) {
-      // search -> retorna um valor inteiro, indicando a posição do inicio da primeira
-      // ocorrência de expReg dentro de instStr. Se nenhuma ocorrencia for encontrada o método retornara -1
-      // instStr.search(expReg);
-      if (lchar.search(expr) != 0 || lchar > 3) {
-        val.value = '';
-      }
-    } else if (i == 1) {
-      if (lchar.search(expr) != 0) {
-        // substring(indice1,indice2)
-        // indice1, indice2 -> será usado para delimitar a string
-        var tst1 = val.value.substring(0, i);
-        val.value = tst1;
-        continue;
-      }
-
-      if (nchar != '/' && nchar != '') {
-        var tst1 = val.value.substring(0, i + 1);
-
-        if (nchar.search(expr) != 0)
-          var tst2 = val.value.substring(i + 2, pass.length);
-        else var tst2 = val.value.substring(i + 1, pass.length);
-
-        val.value = tst1 + '/' + tst2;
-      }
-    } else if (i == 4) {
-      if (lchar.search(expr) != 0) {
-        var tst1 = val.value.substring(0, i);
-        val.value = tst1;
-        continue;
-      }
-
-      if (nchar != '/' && nchar != '') {
-        var tst1 = val.value.substring(0, i + 1);
-
-        if (nchar.search(expr) != 0)
-          var tst2 = val.value.substring(i + 2, pass.length);
-        else var tst2 = val.value.substring(i + 1, pass.length);
-
-        val.value = tst1 + '/' + tst2;
-      }
+//Valida nome
+function ApenasLetras(e, t) {
+  try {
+    if (window.event) {
+      var charCode = window.event.keyCode;
+    } else if (e) {
+      var charCode = e.which;
+    } else {
+      return true;
     }
-
-    if (i >= 6) {
-      if (lchar.search(expr) != 0) {
-        var tst1 = val.value.substring(0, i);
-        val.value = tst1;
-      }
+    if (
+      (charCode > 64 && charCode < 91) ||
+      (charCode > 96 && charCode < 123) ||
+      (charCode > 191 && charCode <= 255) // letras com acentos
+    ) {
+      return true;
+    } else {
+      return false;
     }
+  } catch (err) {
+    alert(err.Description);
   }
-
-  if (pass.length > 10) val.value = val.value.substring(0, 10);
-  return true;
 }
 
 //Valida CEP
@@ -145,75 +95,13 @@ function somenteNumeros(num) {
   }
 }
 
-//Valida campo nome e Orgão Expedidor
-function ApenasLetras(e, t) {
-  try {
-    if (window.event) {
-      var charCode = window.event.keyCode;
-    } else if (e) {
-      var charCode = e.which;
-    } else {
-      return true;
-    }
-    if (
-      (charCode > 64 && charCode < 91) ||
-      (charCode > 96 && charCode < 123) ||
-      (charCode > 191 && charCode <= 255) // letras com acentos
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  } catch (err) {
-    alert(err.Description);
-  }
-}
+//Maskara Cel
+$('#telefone, #celular').mask('(00) 0000-0000');
 
-// validador CPF
-function verificarCPF(c) {
-  var i;
-  s = c;
-  var c = s.substr(0, 9);
-  var dv = s.substr(9, 2);
-  var d1 = 0;
-  var v = false;
-
-  for (i = 0; i < 9; i++) {
-    d1 += c.charAt(i) * (10 - i);
-  }
-  if (d1 == 0) {
-    alert('CPF Inválido');
-    v = true;
-    return false;
-  }
-  d1 = 11 - (d1 % 11);
-  if (d1 > 9) d1 = 0;
-  if (dv.charAt(0) != d1) {
-    alert('CPF Inválido');
-    v = true;
-    return false;
-  }
-
-  d1 *= 2;
-  for (i = 0; i < 9; i++) {
-    d1 += c.charAt(i) * (11 - i);
-  }
-  d1 = 11 - (d1 % 11);
-  if (d1 > 9) d1 = 0;
-  if (dv.charAt(1) != d1) {
-    alert('CPF Inválido');
-    v = true;
-    return false;
-  }
-  /*if (!v) {
-    alert(c + 'Número de CPF Válido');
-  }*/
-}
-
-//habilita ou desabilita botão enviar
+//Maskara Conta Bancária
+$('#conta-banco').mask('00000-0');
 
 //valida o cnpj
-/*
 function FormataCnpj(campo, teclapres) {
   var tecla = teclapres.keyCode;
   var vr = new String(campo.value);
@@ -289,4 +177,3 @@ function validarCNPJ(cnpj) {
 
   return true;
 }
-*/
