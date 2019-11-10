@@ -3,7 +3,7 @@ h2 {
   color: #000;
   margin-bottom: 20px;
   font-size: 30px;
-  margin-top: 15%;
+  margin-top: 0px;
   font-weight: bold;
 }
 
@@ -99,9 +99,9 @@ a:hover {
   }
 }
 /*
-#ong {
-  display: none;
-}*/
+    #ong {
+      display: none;
+    }*/
 /*CSS do MODAl*/
 .ajuda {
   color: #000;
@@ -153,7 +153,127 @@ input[type='checkbox' i] {
 .botao-login :hover {
   background: #fec118 !important;
 }
+/*INFO ANIMAIS*/
+.info-animais {
+  background: #f0ece0;
+  height: 50%;
+}
 
-#botao {
-  /*width: 20%;*/
+.resultado {
+  margin-left: 9%;
+}
+.estrela {
+  width: 20px;
+  height: 20px;
+}
+
+/*TESTE*/
+/*#carouselExampleCaptions {
+    width: 50% !important;
+    height: 50% !important;
+  }*/
+
+.imagem-carrosel1 {
+  object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+  object-position: 0 34%; /*eixos: x e y*/
+  height: 400px;
+}
+
+.imagem-carrosel2 {
+  object-fit: cover;
+  object-position: 0 50%;
+  height: 400px;
+}
+
+.imagem-carrosel3 {
+  object-fit: cover;
+  object-position: 0 50%;
+  height: 400px;
+}
+
+@media (max-width: 500px) {
+  .imagem-carrosel1 {
+    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+    object-position: 90% 0%; /*eixos: x e y*/
+  }
+
+  .imagem-carrosel2 {
+    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+    object-position: 50% 0%; /*eixos: x e y*/
+    height: 400px;
+  }
+  .imagem-carrosel3 {
+    object-fit: cover;
+    object-position: 30% 0%;
+  }
+  .primeiro,
+  .segundo,
+  .terceiro {
+    margin-left: 8% !important;
+  }
+}
+
+.descricao {
+  justify-content: center;
+}
+
+h4 {
+  text-align: center;
+}
+body {
+  background-color: #f2fffc;
+}
+/*teste*/
+.titulo-maus-tratos {
+  text-align: center;
+  background-color: #fec118;
+  color: #fff;
+  padding: 2rem;
+  border-bottom: 0.5rem solid #000;
+  margin-top: 5%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  text-shadow: 3px 3px #000;
+}
+
+main p {
+  margin: 1em 0;
+}
+
+.Q {
+  font-size: 200%;
+  font-weight: bold;
+  color: #3c1d3d;
+  text-shadow: 1 px 1 px #000;
+  margin-right: 0, 2ch;
+  line-height: 1;
+}
+
+.ex-maus-tratos:before {
+  position: absolute;
+  font-size: 10em;
+  line-height: 0.8;
+  color: #bbb;
+}
+
+.ex-maus-tratos {
+  background-color: #d9e5e3;
+  border: 0.5em solid #c2ccca;
+  padding: 1em;
+  margin: 1em 2em;
+  width: 30ch;
+  box-sizing: border-box;
+  transition: box-shadow 1s, transform 1s;
+  transition-delay: 1s, 0s;
+}
+
+.primeiro {
+  margin-left: 30%;
+}
+
+.terceiro {
+  margin-left: 30%;
 }
