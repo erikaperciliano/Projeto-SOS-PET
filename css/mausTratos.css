@@ -1,5 +1,5 @@
 h2 {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   color: #000;
   margin-bottom: 20px;
   font-size: 30px;
@@ -9,13 +9,13 @@ h2 {
 
 .navbar-header {
   color: white;
-  font-family: 'Chilanka', cursive;
+  font-family: "Chilanka", cursive;
 }
 
 .logo {
-  font-family: 'Chilanka', cursive;
-  font-family: 'Cute Font', cursive;
-  font-family: 'Anton', sans-serif;
+  font-family: "Chilanka", cursive;
+  font-family: "Cute Font", cursive;
+  font-family: "Anton", sans-serif;
   font-size: 30px;
 }
 
@@ -132,7 +132,7 @@ label {
   color: #fec118 !important;
 }
 
-input[type='checkbox' i] {
+input[type="checkbox" i] {
   background-color: initial;
   cursor: default;
   -webkit-appearance: checkbox;
@@ -142,7 +142,7 @@ input[type='checkbox' i] {
 }
 
 .logar {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   color: #000;
   margin-bottom: 20px;
   font-size: 30px;
@@ -208,8 +208,12 @@ input[type='checkbox' i] {
   }
   .primeiro,
   .segundo,
-  .terceiro {
-    margin-left: 8% !important;
+  .terceiro,
+  .quarto {
+    margin: 0;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 5% !important;
   }
 }
 
@@ -270,10 +274,15 @@ main p {
   transition-delay: 1s, 0s;
 }
 
-.primeiro {
-  margin-left: 30%;
+.primeiro,
+.segundo,
+.terceiro {
+  margin: 0;
+  display: inline-block;
+  justify-content: space-around;
+  line-height: 1em;
 }
 
-.terceiro {
-  margin-left: 30%;
+.primeiro {
+  line-height: 0.86em !important;
 }
