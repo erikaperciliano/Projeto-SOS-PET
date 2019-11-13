@@ -31,18 +31,20 @@
                   aria-haspopup="true" aria-expanded="false responssible-inicio">Início</a>
       
                 <div class="dropdown-menu fundo">
-                  <a class="dropdown-item nav-item nav-link" href="sobreNos.html">Sobre Nós</a>
                   <a class="dropdown-item nav-item nav-link" href="mausTratos.html">Leis de proteção aos animais</a>
-                  <a class="dropdown-item nav-item nav-link" href="ajude.html">Ajude</a>
-                  <a class="dropdown-item nav-item nav-link" href="#">Adote</a>
+                  <a class="dropdown-item nav-item nav-link" href="index.html">Adote</a>
                 </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="ajude.html">Ajude</a>
               </li>
             <li class="nav-item">
                 <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="cadastro.html">Cadastre-se</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude" href="login.html">Login</a>
-            </li>
+              <div class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude hover-login" data-toggle="modal" data-target="#exampleModalCenter" >
+                Login</div>
+          </li>
           </ul>
         </div>
       </nav>
@@ -67,9 +69,61 @@
                 <img class="img-fluid" src="img/foto-section1.png" alt="imagem-cachorro"/>
                 <p class="font-titulo2">Somos uma plataforma, cujo o objetivo é o apoio às ONGS e Protetores de animais. A nossa proposta é criar meios que possibilitem o regate de animais abandonados e/ ou vitímas de maus tratos e encaminhá-los a lares temporários, a ONGS e por fim, ao acolhimento final por pessoas interessadas na adoção destes.
                 </p>
-        </div>
+             </div>
+             <div class="description  text-center font-titulo fundo-branco pt-5">
+                <h2>Missão:</h2>
+                <p class="font-titulo2">
+                  Proporcionar animais de rua a oportunidade dde serem resgatados utilizando a tecnologia como meio.
+                </p>
+            </div>
+            
+            <div class="description  text-center font-titulo fundo-branco pt-5">
+                <h2>Visão:</h2>
+                <p class="font-titulo2">
+                  Ser referência de site em todo o Brasil para adoção de animais, disseminando a cultura de adoção e não venda de animais.
+                </p>
+            </div>
+            
+            <div class="description  text-center font-titulo fundo-branco pt-5">
+                <h2>Valores:</h2>
+                <p class="font-titulo2">
+                  Acreditamos que os animais são a pureza dos sentimentos e que eles podem nos ensinar a amar ao próximo verdadeiramente, levando como base lealdade e cumplicidade.
+                </p>
+            </div>
       </section>
     </main>
+    
+<!-- Modal --> 
+<div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="justify-content-center container">
+            <h2 class="logar">Já sou cadastrado</h2>
+      <div class="modal-body">
+          <form>
+              <div class="form-group">
+                  <label for="login">E-mail</label>
+                  <input type="email" class="form-control input-login" name="login" required placeholder="Digite seu E-mail" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control input-login" id="exampleInputPassword1" required placeholder="Digite sua Senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label lembra-senha" for="exampleCheck1">Lembrar minha senha</label>
+              </div>
+            <button type="submit" class="btn btn-warning modal-body entrar-login">Entrar</button>
+            <button type="button" class="close X" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </form><br>
+            <a class="ajuda" href="cadastro.html">Não sou cadastrado</a>                       
+      </div>
+    </div>
+  </div>
+</div>
+</div>
     <footer class="bg-secondary p-3 rodape">
       <p class="text-light m-0 text-center">
         <a class="text-light" href="mailto:email@frutafruto.com.br"

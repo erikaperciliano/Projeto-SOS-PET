@@ -32,10 +32,12 @@
                 <a class="dropdown-item nav-item nav-link" href="sobreNos.html">Sobre Nós</a>
                 <a class="dropdown-item nav-item nav-link" href="mausTratos.html">Leis de proteção aos animais</a>
                 <a class="dropdown-item nav-item nav-link" href="#">Adote</a>
-                <a class="dropdown-item nav-item nav-link" href="ajude.html">Ajude</a>
               </div>
             </li>
           <li class="nav-item">
+              <li class="nav-item">
+                  <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="ajude.html">Ajude</a>
+              </li>
             <div class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude hover-cadastro" data-toggle="modal" data-target="#exampleModalCenter" >
               Login
             </div>
@@ -69,7 +71,7 @@
                       required oninvalid="setCustomValidity('Por favor, preencha o nome todo')"  oninput="setCustomValidity('')"onkeypress="return ApenasLetras(event,this);">
                   </div> 
                   <div class="form-group">
-                    <label for="cel">Número de Celular</label>
+                    <label for="cel">Celular</label>
                     <input type="text" class="form-control obrigatorio" id="cel"name="cel" 
                       required oninvalid="setCustomValidity('Por favor, preencha o celular')"  oninput="setCustomValidity('')" onkeypress="$(this).mask('(00) 00000-0009')">
                   </div> 
@@ -134,17 +136,13 @@
                         <label for="uf">UF</label>
                         <input name="uf" type="text" id="uf" class="form-control obrigatorio" aria-describedby="emailHelp" 
                         required>
-                    </div>
-                    <div class="form-group">
-                      <label for="login">Login</label>
-                      <input type="text" class="form-control obrigatorio" name="login" required oninvalid="setCustomValidity('Por favor, crie o seu login')"  oninput="setCustomValidity('')"> 
-                    </div>
+                    </div>                 
                     <div class="form-group">
                       <label for="senha">Senha</label>
                       <input type="password" class="form-control obrigatorio" id="senha" required oninvalid="setCustomValidity('Por favor, crie a sua senha')"  oninput="setCustomValidity('')">
                     </div>
                 
-                  <button type="submit" class="btn btn-warning" id="botao" >Salvar</button>
+                  <button type="submit" class="btn btn-warning" id="botao" >Cadastrar</button>
                 </section>
                <!--<div class="input-group mb-3">
                     <select class="custom-select" id="tipoCadastro">
@@ -167,19 +165,21 @@
       <div class="modal-body">
           <form>
               <div class="form-group">
-                  <label for="login">Login</label>
-                  <input type="email" class="form-control input-login" name="login" required placeholder="digite seu login" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
+                  <label for="login">E-mail</label>
+                  <input type="email" class="form-control input-login" name="login" required placeholder="Digite seu E-mail" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control input-login" id="exampleInputPassword1" required placeholder="digite sua senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
+                <input type="password" class="form-control input-login" id="exampleInputPassword1" required placeholder="Digite sua Senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
               </div>
               <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label lembra-senha" for="exampleCheck1">Lembrar minha senha</label>
               </div>
              <button type="submit" class="btn btn-warning  entrar-login">Entrar</button>
-              <button type="button" class="btn btn-warning sair-login" data-dismiss="modal">Fechar</button>  
+             <button type="button" class="close X" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button> 
             </form><br>
             <a class="ajuda" href="cadastro.html">Não sou cadastrado</a>                       
       </div>

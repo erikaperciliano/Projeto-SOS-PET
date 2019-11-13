@@ -325,6 +325,9 @@ label {
   .tita {
     object-position: 0% 20%;
   }
+  .leia-mais {
+    margin: auto;
+  }
 }
 
 /*.active*/
@@ -670,12 +673,12 @@ a {
 }
 
 .entrar-login {
-  margin-left: 15% !important;
   background: #fec118 !important;
 }
 
 .leia-mais {
   color: #fff;
+  margin-left: 20%;
 }
 
 .ajuste-login {
@@ -688,6 +691,30 @@ a {
   background: #fec118;
 }
 
-li {
-  background: #fec118;
+.X {
+  font-size: 4.5rem;
+  margin-top: -70% !important;
+}
+
+/*Paginação*/
+.paginacao {
+  justify-content: center;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #000 !important;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #fec118;
+  border-color: #007bff;
+  border: 1px solid #000;
 }

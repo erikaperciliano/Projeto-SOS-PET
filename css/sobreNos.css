@@ -1,5 +1,5 @@
 h2 {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   color: #000;
   margin-bottom: 20px;
   font-size: 30px;
@@ -9,11 +9,11 @@ h2 {
 
 .navbar-header {
   color: white;
-  font-family: 'Chilanka', cursive;
+  font-family: "Chilanka", cursive;
 }
 
 .logo {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 30px;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .font-titulo2 {
-  font-family: 'Chilanka', cursive;
+  font-family: "Chilanka", cursive;
   margin-top: 5%;
   font-size: x-large;
 }
@@ -124,7 +124,46 @@ body {
     margin-bottom: 80%;
   }
 }
-/*
-#ong {
-  display: none;
-}*/
+.hover-login:hover {
+  background: #fec118;
+}
+
+.X {
+  font-size: 4.5rem;
+  margin-top: -70% !important;
+}
+
+.ajuda {
+  color: #000;
+}
+
+.entrar-login,
+.sair-login {
+  margin-top: 15px;
+}
+.entrar-login :hover {
+  color: #fff;
+}
+.ajuda:hover {
+  color: #fec118 !important;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

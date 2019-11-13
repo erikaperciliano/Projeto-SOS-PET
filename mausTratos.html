@@ -32,17 +32,19 @@
                   aria-haspopup="true" aria-expanded="false responssible-inicio">Início</a>
       
                 <div class="dropdown-menu fundo">
-                  <a class="dropdown-item nav-item nav-link" href="sobreNos.html">Sobre Nós</a>
-                  <a class="dropdown-item nav-item nav-link" href="#">Leis de proteção aos animais</a>              
-                  <a class="dropdown-item nav-item nav-link" href="#">Adote</a>               
+                  <a class="dropdown-item nav-item nav-link" href="sobreNos.html">Sobre Nós</a>            
+                  <a class="dropdown-item nav-item nav-link" href="index.html">Adote</a>               
                 </div>
               </li>
               <li class="nav-item">
                   <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="ajude.html">Ajude</a>
               </li> 
               <li class="nav-item">
-                  <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="#">Minha Conta</a>
-              </li>           
+                  <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="cadastro.html">Cadastre-se</a>
+              </li>  
+              <div class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude hover-login" data-toggle="modal" data-target="#exampleModalCenter" >
+                  Login</div>
+            </li>        
           </ul>     
         </div>
       </nav>
@@ -243,7 +245,38 @@
         ainda legislação específica que disciplina a utilização de animais em experiências científicas.
       </p>
     </div>
-    </main>  
+    </main> 
+    <!-- Modal --> 
+<div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="justify-content-center container">
+              <h2 class="logar">Já sou cadastrado</h2>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="login">E-mail</label>
+                    <input type="email" class="form-control input-login" name="login" required placeholder="Digite seu E-mail" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control input-login" id="exampleInputPassword1" required placeholder="Digite sua Senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label lembra-senha" for="exampleCheck1">Lembrar minha senha</label>
+                </div>
+              <button type="submit" class="btn btn-warning modal-body entrar-login">Entrar</button>
+              <button type="button" class="close X" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              </form><br>
+              <a class="ajuda" href="cadastro.html">Não sou cadastrado</a>                       
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><br> 
     <footer class="bg-secondary p-3 rodape">
       <p class="text-light m-0 text-center">
         <a class="text-light" href="mailto:email@frutafruto.com.br"

@@ -1,5 +1,5 @@
 h2 {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   color: #000;
   margin-bottom: 20px;
   font-size: 30px;
@@ -9,13 +9,13 @@ h2 {
 
 .navbar-header {
   color: white;
-  font-family: 'Chilanka', cursive;
+  font-family: "Chilanka", cursive;
 }
 
 .logo {
-  font-family: 'Chilanka', cursive;
-  font-family: 'Cute Font', cursive;
-  font-family: 'Anton', sans-serif;
+  font-family: "Chilanka", cursive;
+  font-family: "Cute Font", cursive;
+  font-family: "Anton", sans-serif;
   font-size: 30px;
 }
 
@@ -86,6 +86,11 @@ a:hover {
     justify-content: center !important;
     height: auto;
   }
+  #botao {
+    margin-left: 30%!important;
+    width: 40% !important;
+  }
+
   #borda-black {
     border-bottom: 40px solid black !important;
     margin-top: 0 !important;
@@ -132,7 +137,7 @@ label {
   color: #fec118 !important;
 }
 
-input[type='checkbox' i] {
+input[type="checkbox" i] {
   background-color: initial;
   cursor: default;
   -webkit-appearance: checkbox;
@@ -142,7 +147,7 @@ input[type='checkbox' i] {
 }
 
 .logar {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   color: #000;
   margin-bottom: 20px;
   font-size: 30px;
@@ -160,4 +165,51 @@ input[type='checkbox' i] {
 
 .hover-cadastro:hover {
   background: #fec118 !important;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.X {
+  font-size: 4.5rem;
+  margin-top: -70% !important;
+}
+
+.ajuda {
+  color: #000;
+}
+
+.entrar-login,
+.sair-login {
+  margin-top: 15px;
+}
+.entrar-login :hover {
+  color: #fff;
+}
+.ajuda:hover {
+  color: #fec118 !important;
+}
+
+#botao {
+  margin-left: 40%;
+  width: 20%;
+  line-height: 1.9em;
+  border-radius: 10px 10px;
 }
