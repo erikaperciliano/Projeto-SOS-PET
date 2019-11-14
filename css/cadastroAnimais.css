@@ -103,9 +103,9 @@ a:hover {
   }
 }
 /*
-#ong {
-  display: none;
-}*/
+  #ong {
+    display: none;
+  }*/
 /*CSS do MODAl*/
 .ajuda {
   color: #000;
@@ -165,13 +165,6 @@ input[type='checkbox' i] {
   border-radius: 10px 10px;
 }
 
-.file-wrapper {
-  cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-}
-
 .X {
   font-size: 4.5rem;
   margin-top: -70% !important;
@@ -179,4 +172,16 @@ input[type='checkbox' i] {
 
 .hover-login:hover {
   background: #fec118;
+}
+
+#descricao {
+  width: 100% !important;
+  line-height: 300% !important;
+}
+
+.file-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
 }

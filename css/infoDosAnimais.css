@@ -132,6 +132,10 @@ label {
   color: #fec118 !important;
 }
 
+.navbar-header {
+  background: #fec118 !important;
+}
+
 input[type='checkbox' i] {
   background-color: initial;
   cursor: default;

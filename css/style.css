@@ -28,12 +28,12 @@
 
 .font-titulo {
   /*font-family: 'Pacifico', cursive;*/
-  font-family: "Chilanka", cursive;
+  font-family: 'Chilanka', cursive;
 }
 
 .font-titulo {
   /*font-family: 'Pacifico', cursive;*/
-  font-family: "Chilanka", cursive;
+  font-family: 'Chilanka', cursive;
 }
 
 .cor-especial {
@@ -65,9 +65,9 @@ hover .submit-senha {
 
 .font-titulo-cadastro,
 .botao-cadastro {
-  font-family: "Noto Serif", serif;
-  font-family: "Lobster", cursive;
-  font-family: "Fredoka One", cursive;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Fredoka One', cursive;
   color: darkred;
   margin-bottom: 20px;
 }
@@ -113,7 +113,7 @@ body,
 
 .navbar-header {
   color: white;
-  font-family: "Chilanka", cursive;
+  font-family: 'Chilanka', cursive;
 }
 
 .nav-header a:hover {
@@ -132,9 +132,9 @@ a:hover {
 }
 
 .logo {
-  font-family: "Chilanka", cursive;
-  font-family: "Cute Font", cursive;
-  font-family: "Anton", sans-serif;
+  font-family: 'Chilanka', cursive;
+  font-family: 'Cute Font', cursive;
+  font-family: 'Anton', sans-serif;
   font-size: 30px;
 }
 
@@ -328,6 +328,9 @@ label {
   .leia-mais {
     margin: auto;
   }
+  .X {
+    margin-top: 99% !important;
+  }
 }
 
 /*.active*/
@@ -421,7 +424,7 @@ label {
 }
 
 h1 {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
   font-size: 44px;
   color: #f4aa24;
   margin: 0.67em 0;
@@ -489,7 +492,7 @@ textarea {
   margin: 0;
 }
 
-input[type="hidden" i] {
+input[type='hidden' i] {
   display: none;
   -webkit-appearance: initial;
   background-color: initial;
@@ -533,7 +536,7 @@ input {
 
 .row:before,
 .row:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
@@ -545,9 +548,9 @@ input {
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -570,8 +573,8 @@ input[type="submit"] {
 }
 
 .btn {
-  font-family: "Fredoka One", cursive;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 .btn {
@@ -646,7 +649,7 @@ label {
   color: #fec118 !important;
 }
 
-input[type="checkbox" i] {
+input[type='checkbox' i] {
   background-color: initial;
   cursor: default;
   -webkit-appearance: checkbox;
@@ -656,7 +659,7 @@ input[type="checkbox" i] {
 }
 
 .logar {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
   color: #000;
   margin-bottom: 20px;
   font-size: 30px;
