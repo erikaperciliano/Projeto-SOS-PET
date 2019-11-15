@@ -1,0 +1,728 @@
+.card-largura {
+  max-width: 18rem; /*faz com que a imagem não ultrapasse essa largura*/
+}
+
+.imagem-carrosel1 {
+  object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+  object-position: 0 34%; /*eixos: x e y*/
+  height: 400px;
+}
+
+.imagem-carrosel2 {
+  object-fit: cover;
+  object-position: 0 50%;
+  height: 400px;
+}
+
+.imagem-carrosel3 {
+  object-fit: cover;
+  object-position: 0 50%;
+  height: 400px;
+}
+
+.imagem-carrosel4 {
+  object-fit: cover;
+  object-position: 0 50%;
+  height: 400px;
+}
+
+.font-titulo {
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Chilanka', cursive;
+}
+
+.font-titulo {
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Chilanka', cursive;
+}
+
+.cor-especial {
+  color: #191818;
+  font-weight: bold;
+  background: #fec118;
+}
+
+.fundo-branco,
+#fundo-branco {
+  background: white;
+}
+
+.borda-cor-especial {
+  border-color: #fec118;
+  border-top-width: 5%;
+  border-bottom-width: 5%;
+  border-right-width: 5%;
+  border-left-width: 5%;
+}
+
+.card-posicao-imagem {
+  object-fit: cover;
+  height: 200px;
+}
+hover .submit-senha {
+  margin-bottom: 20px;
+}
+
+.font-titulo-cadastro,
+.botao-cadastro {
+  font-family: 'Noto Serif', serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Fredoka One', cursive;
+  color: darkred;
+  margin-bottom: 20px;
+}
+
+.botao-cadastro {
+  color: white;
+  background: darkred;
+}
+
+#menssagem a {
+  color: black;
+}
+
+#menssagem a:hover {
+  color: darkred;
+  text-decoration: none;
+}
+
+.login {
+  background: darkcyan;
+}
+
+body,
+.artigo {
+  line-height: 1;
+  overflow-x: hidden;
+}
+.caixa-fotos {
+  background-color: rgba(193, 194, 197, 0.5);
+}
+
+.nav-header {
+  background-color: #ffc107 !important;
+  width: 100%;
+  padding: 30px;
+  /* height: auto; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*border-bottom: 40px solid black;*/
+}
+
+.navbar-header {
+  color: white;
+  font-family: 'Chilanka', cursive;
+}
+
+.nav-header a:hover {
+  background: #ffc107 !important;
+}
+/*teste*/
+.center {
+  font: 900 18px/120% Pbold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.center,
+a:hover {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Chilanka', cursive;
+  font-family: 'Cute Font', cursive;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+}
+
+.espacamento {
+  margin-top: 0%;
+}
+
+/*.container{
+      background-color: transparent url("../img/body.jpeg") no-repeat center center;
+      
+  }*/
+
+#section1 {
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+
+#borda-black {
+  border-bottom: 40px solid black !important;
+  margin-top: 5% !important;
+}
+
+.fundo {
+  background: #fec118;
+  color: white;
+}
+
+.fundo a:hover {
+  background: #191818;
+  color: white;
+}
+
+.img {
+  position: relative;
+  background: black;
+}
+.img-texto {
+  color: #fff;
+}
+
+.peludinho {
+  font-size: x-large;
+}
+
+#corpo .img img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1%;
+}
+
+#corpo {
+  margin-bottom: 2%;
+}
+
+.menu-corpo {
+  text-align: center;
+  max-width: 140px;
+  width: 100%;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10%;
+  margin-top: -9%;
+  filter: opacity(25%);
+  font: 32px/100% Plight;
+  margin-top: 10px;
+}
+h3 {
+  color: #fec118;
+  margin-top: 1%;
+  height: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hover-login:hover {
+  background: #fec118;
+}
+
+.lista-animais {
+  color: white;
+  margin-top: -3%;
+  height: 100px;
+  font-weight: bold;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.card-largura {
+  max-width: 18rem; /*faz com que a imagem não ultrapasse essa largura*/
+  background: black;
+  color: white;
+  margin-left: 5%;
+  margin-top: -2%;
+}
+
+card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-color: black;
+  color: white;
+}
+
+.fundo-artigo {
+  background: black;
+}
+
+label {
+  font-size: 15px;
+  display: inline-block;
+}
+#toggle {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  #botao-x {
+    margin-top: -100% !important;
+  }
+
+  #search.home-search-area {
+    width: auto !important;
+    justify-content: center !important;
+  }
+  #borda-black {
+    margin-top: 0% !important;
+  }
+
+  search-area .arrow {
+    display: none;
+  }
+
+  search-area {
+    margin-top: 15px;
+  }
+
+  #mais-informacoes {
+    color: #fff;
+    margin-left: 14% !important;
+  }
+
+  .pai {
+    display: inline-block;
+    text-align: center;
+    margin-left: 25% !important;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+  }
+  .nav {
+    height: 20%;
+  }
+  .logo {
+    position: relative !important;
+  }
+
+  .imagem-carrosel1 {
+    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+    object-position: 50% 0%; /*eixos: x e y*/
+    height: 400px;
+  }
+
+  .imagem-carrosel2 {
+    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+    object-position: 95% 0%; /*eixos: x e y*/
+    height: 400px;
+  }
+
+  .imagem-carrosel3 {
+    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+    object-position: 55% 0%; /*eixos: x e y*/
+    height: 400px;
+  }
+  .imagem-carrosel4 {
+    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+    object-position: 45% 0%; /*eixos: x e y*/
+    height: 400px;
+  }
+
+  .tita {
+    object-position: 0% 20%;
+  }
+  .leia-mais {
+    margin: auto;
+  }
+  .X {
+    margin-top: 99% !important;
+  }
+}
+
+/*.active*/
+.porte-animal {
+  color: #fec118;
+  border-color: #ffffff;
+  height: 19px;
+}
+
+.pai {
+  display: inline-block;
+  text-align: center;
+  margin-left: 15%;
+}
+
+.details,
+.info1,
+.info2 {
+  font-size: 13px;
+  border: 1px solid #e4e4e4;
+  color: #e4e4e4;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  /*float: left;*/
+  margin: 3px 3px 0 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  height: 19px;
+}
+
+.info1 {
+  margin-left: 180%;
+  margin-top: -111%;
+}
+.info2 {
+  margin-top: -110%;
+  margin-left: 380%;
+}
+
+.female {
+  height: 19px;
+  margin-top: -160%;
+  margin-left: 450%;
+}
+
+.card-text,
+.state {
+  text-align: center;
+}
+
+.card-text {
+  margin-right: 6% !important;
+}
+
+#mais-informacoes .leiaMais {
+  color: #fff;
+  margin-left: 22% !important;
+}
+
+#mais-informacoes a:hover {
+  color: #000;
+  background-color: #ffc107;
+}
+
+/*acréscimos*/
+.home-search-area {
+  background-color: #ffc107;
+  padding: 30px 44px 44px;
+  text-align: center;
+  margin-bottom: 2%;
+  z-index: 1;
+  position: relative;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 1000px; /*teste*/
+}
+
+#search.home-search-area {
+  justify-content: center !important;
+}
+
+.home-search-area h1 {
+  color: #ffffff;
+  opacity: 0.95;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 44px;
+  color: #f4aa24;
+  margin: 0.67em 0;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input {
+  line-height: normal;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+input[type='hidden' i] {
+  display: none;
+  -webkit-appearance: initial;
+  background-color: initial;
+  cursor: default;
+  padding: initial;
+  border: initial;
+}
+
+input {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 0px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row:before,
+.row:after {
+  content: ' ';
+  display: table;
+}
+
+.home-search-area .btn-lined,
+.home-search-area .btn-lined:hover {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.btn-lined,
+.btn-lined:hover {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 9px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-secundary {
+  color: #ffffff;
+  background-color: #613488;
+  border-color: #613488;
+}
+
+.btn {
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Comfortaa', cursive;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.home-search-area .arrow {
+  width: 128px;
+  margin-left: -318px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+/*CSS do MODAl*/
+.ajuda {
+  color: #000;
+}
+
+.entrar {
+  margin-left: 65%;
+}
+
+label {
+  margin: 0 0px 0 0;
+  font-size: 15px;
+  display: inline;
+}
+
+.input-login {
+  margin-top: 4%;
+}
+
+.entrar-login,
+.sair-login {
+  margin-top: 15px;
+}
+.entrar-login :hover {
+  color: #fff;
+}
+.ajuda:hover {
+  color: #fec118 !important;
+}
+
+input[type='checkbox' i] {
+  background-color: initial;
+  cursor: default;
+  -webkit-appearance: checkbox;
+  box-sizing: border-box;
+  padding: initial;
+  border: initial;
+}
+
+.logar {
+  font-family: 'Fredoka One', cursive;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15%;
+  font-weight: bold;
+}
+
+.botao-login :hover {
+  background: #fec118 !important;
+}
+
+a {
+  color: #fff;
+}
+
+.entrar-login {
+  background: #fec118 !important;
+}
+
+.leia-mais {
+  color: #fff;
+  margin-left: 20%;
+}
+
+.ajuste-login {
+  margin-left: 600%;
+  background: #fec118;
+}
+
+.ajuste-cadastro {
+  margin-left: 300%;
+  background: #fec118;
+}
+
+.X {
+  font-size: 4.5rem;
+  margin-top: -70% !important;
+}
+
+/*Paginação*/
+.paginacao {
+  justify-content: center;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #000 !important;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #fec118;
+  border-color: #007bff;
+  border: 1px solid #000;
+}

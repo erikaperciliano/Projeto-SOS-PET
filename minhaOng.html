@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href="css/minhaConta.css"/>
+    <link rel="stylesheet" type="text/css" href="css/minhaOng.css"/>
     <link rel="shortcut icon" href="img/favicon.png" />
   </head>
   <body>          
@@ -40,11 +40,11 @@
             </li>    
             <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle navbar-header btn-warning" data-toggle="dropdown" href="#" role="button"
-                  aria-haspopup="true" aria-expanded="false responssible-inicio">Minha Conta</a>
+                  aria-haspopup="true" aria-expanded="false responssible-inicio">Minha Ong</a>
                 <div class="dropdown-menu fundo">
-                  <a class="dropdown-item nav-item nav-link" href="#">Editar  Conta</a>
+                  <a class="dropdown-item nav-item nav-link" href="#">Editar  ONG</a>
                   <div id="excluir-conta" class="dropdown-item nav-item nav-link" data-toggle="modal" data-target="#exampleModalCenter" >
-                      <a class="dropdown-item nav-item nav-link" href="#">Excluir Conta</a></div>                 
+                      <a class="dropdown-item nav-item nav-link" href="#">Excluir ONG</a></div>                 
                   <a class="dropdown-item nav-item nav-link" href="favoritos.html">Meus Favoritos</a>       <a class="dropdown-item nav-item nav-link" href="index.html">Sair</a>  
                 </div>            
               </li>                    
@@ -59,7 +59,7 @@
     </header>
     <main class="img">    
         <div class="justify-content-center container">
-            <h2>Dados Pessoais</h2>  
+            <h2>Dados da ONG</h2>  
             <br>
             <figure class="form-group">
               <img src="img/foto.png" alt="foto de um animal" width="20%" height="20%">         
@@ -67,32 +67,92 @@
             <span class="file-wrapper"> 
               <button class="button" type="button" data-user-select-image="">Editar imagem</button>
             </span>
-            <div class="input-group mb-3" required>
-              <select class="custom-select" id="tipoCadastro" readonly="readonly">
-                <option selected>Escolha o Tipo de Cadastro</option>
-                <option value="1">ONG</option>
-                <option value="2">Doador</eoption>
-                <option value="3">Adotante</option>
-              </select>               
-            </div>  
-            <form onsubmit="check_form()">
-                <section id="ong"><br> 
-                  <div class="form-group">
+            <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" class="form-control obrigatorio" id="nome"name="nome" 
                       required oninvalid="setCustomValidity('Por favor, preencha o nome todo')"  oninput="setCustomValidity('')"onkeypress="return ApenasLetras(event,this);" readonly="readonly">
-                  </div> 
-                  <div class="form-group">
-                    <label for="cel">Celular</label>
-                    <input type="text" class="form-control obrigatorio" id="cel"name="cel" 
-                      required oninvalid="setCustomValidity('Por favor, preencha o celular')"  oninput="setCustomValidity('')" onkeypress="$(this).mask('(00) 00000-0009')" readonly="readonly">
-                  </div> 
-                  <div class="form-group">
-                      <label for="cpf">CPF</label>
-                      <input type="text" class="form-control obrigatorio" id="cpf"name="cpf" 
-                        required oninvalid="setCustomValidity('Por favor, preencha o CPF')"  oninput="setCustomValidity('')" maxlength="11" placeholder="digite somente o número ex:00000000000" onblur="return verificarCPF(this.value)" readonly="readonly">
-                  </div>   
-                  <div class="form-group">
+                  </div>                  
+                <div class="form-group">
+                    <label for="identidade">Razão Social</label>
+                    <input type="text" class="form-control obrigatorio" id="razaoSocial"name="razaoSocial" 
+                      required oninvalid="setCustomValidity('Por favor, preencha a Razão Social')"  oninput="setCustomValidity('')" readonly="readonly">
+                </div> 
+                <div class="form-group">
+                    <label for="cpf">CNPJ</label>
+                    <input type="text" class="form-control input-md" id="cnpj" onkeyup="FormataCnpj(this,event)" onblur="if(!validarCNPJ(this.value)){alert('CNPJ Informado é inválido'); this.value='';}" maxlength="18" ng-model="cadastro.cnpj"aria-describedby="emailHelp" name="cnpj" onkeyup="cpfMascara(th)"
+                      required oninvalid="this.setCustomValidity('Por favor, preencha o CNPJ')" oninput="setCustomValidity('')" readonly="readonly">
+                 </div> 
+                 <label>Telefone</label>
+                    <input type="text" class="form-control" id="telefone" name="telefone" readonly="readonly"><br>
+
+                    <label>Celular</label>
+                    <input type="text" class="form-control" id="celular" name="celular" required oninvalid="setCustomValidity('Por favor, preencha o cel')"  oninput="setCustomValidity('')" readonly="readonly"><br>
+                                              
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control input-md obrigatorio" id="email" name="email" 
+                          required oninvalid="setCustomValidity('Por favor, preencha o seu e-mail')"   oninput="setCustomValidity('')" readonly="readonly">
+                      </div>                    
+                      <div class="form-group">
+                          <label for="cep">Cep</label>
+                          <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);" class="form-control obrigatorio"  aria-describedby="emailHelp" 
+                            required readonly="readonly">
+                      </div>                   
+                    <div class="form-group">
+                          <label for="rua">Rua</label>
+                          <input name="rua" type="text" id="rua" class="form-control obrigatorio"  aria-describedby="emailHelp" 
+                            required readonly="readonly">
+                    </div>
+                    <div class="form-group">
+                          <label for="num">Número</label>
+                          <input type="text" id="num" class="form-control obrigatorio"  aria-describedby="emailHelp" name="num"
+                          required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" onkeyup="somenteNumeros(this);" readonly="readonly">
+                   </div>
+                    <div class="form-group">
+                          <label for="complemento">Complemento</label>
+                          <input type="text" id="complemento" class="form-control obrigatorio" aria-describedby="emailHelp" readonly="readonly">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input name="bairro" type="text" id="bairro" class="form-control obrigatorio" aria-describedby="emailHelp" 
+                        required readonly="readonly">
+                    </div>
+                      <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input name="cidade" id="cidade" type="text" class="form-control obrigatorio" aria-describedby="emailHelp" 
+                        required readonly="readonly">
+                    </div>
+                            
+                    <div class="form-group">
+                        <label for="uf">UF</label>
+                        <input name="uf" type="text" id="uf" class="form-control obrigatorio" aria-describedby="emailHelp" 
+                        required readonly="readonly">
+                    </div>
+
+                    <label>Conta Bancária</label>
+                    <input type="text" class="form-control" id="conta-banco" name="conta-banco" required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" readonly="readonly"><br>
+         
+                    <div class="input-group mb-3" required readonly="readonly">                      
+                        <select class="custom-select" id="tipoConta">
+                          <option selected>Escolha o Tipo de Conta</option>
+                          <option value="1">Corrente</option>
+                          <option value="2">Poupança</eoption>
+                        </select>               
+                      </div> 
+
+                      <div class="form-group">
+                          <label for="num">Agência</label>
+                          <input type="text" id="agencia" class="form-control obrigatorio"  aria-describedby="emailHelp" name="agencia"
+                          required oninvalid="setCustomValidity('Por favor, preencha a agência')"  oninput="setCustomValidity('')" onkeyup="somenteNumeros(this);" readonly="readonly">
+                   </div>
+                    <div class="form-group">
+                      <label for="senha">Senha</label>
+                      <input type="password" class="form-control obrigatorio" id="senha" required oninvalid="setCustomValidity('Por favor, crie a sua senha')"  oninput="setCustomValidity('')" readonly="readonly">
+                    </div>
+                
+
+                 <!--<div class="form-group">
                       <label for="identidade">RG</label>
                       <input type="text" class="form-control obrigatorio" id="identidade"name="identidade" 
                         required oninvalid="setCustomValidity('Por favor, preencha o RG')"  oninput="setCustomValidity('')"  onkeypress="$(this).mask('00.000.000 -0')" readonly="readonly" readonly="readonly">
@@ -152,7 +212,7 @@
                     <div class="form-group">
                       <label for="senha">Senha</label>
                       <input type="password" class="form-control obrigatorio" id="senha" required oninvalid="setCustomValidity('Por favor, crie a sua senha')"  oninput="setCustomValidity('')"readonly="readonly">
-                    </div>
+                    </div>-->
                 
                   <button type="submit" class="btn btn-warning" id="botao" >Salvar Alterações</button>
                 </section>                            
@@ -201,10 +261,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <script src="js/minhaConta.js"></script> 
+    <script src="js/minhaOng.js"></script> 
   </body>
 </html>
 
