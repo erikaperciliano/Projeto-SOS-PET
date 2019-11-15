@@ -1,5 +1,5 @@
 h2 {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
   color: #000;
   margin-bottom: 20px;
   font-size: 30px;
@@ -9,11 +9,11 @@ h2 {
 
 .navbar-header {
   color: white;
-  font-family: "Chilanka", cursive;
+  font-family: 'Chilanka', cursive;
 }
 
 .logo {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 30px;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .font-titulo2 {
-  font-family: "Chilanka", cursive;
+  font-family: 'Chilanka', cursive;
   margin-top: 5%;
   font-size: x-large;
 }
@@ -102,6 +102,10 @@ body {
 }
 
 @media (max-width: 500px) {
+  #botao-x {
+    margin-top: -105% !important;
+  }
+
   #search.home-search-area {
     width: auto !important;
     justify-content: center !important;

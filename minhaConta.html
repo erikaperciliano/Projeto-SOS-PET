@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
+    <link rel="stylesheet" type="text/css" href="css/minhaConta.css"/>
     <link rel="shortcut icon" href="img/favicon.png" />
   </head>
   <body>          
@@ -33,27 +33,42 @@
                 <a class="dropdown-item nav-item nav-link" href="mausTratos.html">Leis de proteção aos animais</a> 
                 <a class="dropdown-item nav-item nav-link" href="index.html">Adote</a>                
               </div>
-            </li>             
-          <li class="nav-item">
-              <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="cadastro.html">Cadastre-se</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="cadastroOng.html">Cadastre sua ONG</a>
-          </li>
+            </li>     
             <li class="nav-item">
-                <div class="nav-link navbar-header  btn-warning nav-item nav-link responssible-ajude hover-login" data-toggle="modal" data-target="#exampleModalCenter" >
-                  Login</div>
-            </li>
-        </ul>
-        </div>
+                <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="#">Termo de Uso</a>
+               
+            </li>    
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle navbar-header btn-warning" data-toggle="dropdown" href="#" role="button"
+                  aria-haspopup="true" aria-expanded="false responssible-inicio">Minha Conta</a>
+                <div class="dropdown-menu fundo">
+                  <a class="dropdown-item nav-item nav-link" href="#">Editar  Conta</a>
+                  <div id="excluir-conta" class="dropdown-item nav-item nav-link" data-toggle="modal" data-target="#exampleModalCenter" >
+                      <a class="dropdown-item nav-item nav-link" href="#">Excluir Conta</a></div>                 
+                  <a class="dropdown-item nav-item nav-link" href="#">Meus Favoritos</a>       <a class="dropdown-item nav-item nav-link" href="index.html">Sair</a>  
+                </div>            
+              </li>                    
+        </ul>        
+        <figure >
+                <img src="img/foto.png" id="my-photo" alt="foto de um animal" width="20%" height="100%"> 
+                                    
+        </figure> 
+           
       </nav>
       <div id="borda-black"></div>
     </header>
     <main class="img">    
         <div class="justify-content-center container">
-            <h2>Faça seu cadastro</h2>          
+            <h2>Dados Pessoais</h2>  
+            <br>
+            <figure class="form-group">
+              <img src="img/foto.png" alt="foto de um animal" width="20%" height="20%">         
+            </figure>
+            <span class="file-wrapper"> 
+              <button class="button" type="button" data-user-select-image="">Editar imagem</button>
+            </span>
             <div class="input-group mb-3" required>
-              <select class="custom-select" id="tipoCadastro">
+              <select class="custom-select" id="tipoCadastro" readonly="readonly">
                 <option selected>Escolha o Tipo de Cadastro</option>
                 <option value="1">ONG</option>
                 <option value="2">Doador</eoption>
@@ -65,120 +80,100 @@
                   <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" class="form-control obrigatorio" id="nome"name="nome" 
-                      required oninvalid="setCustomValidity('Por favor, preencha o nome todo')"  oninput="setCustomValidity('')"onkeypress="return ApenasLetras(event,this);">
+                      required oninvalid="setCustomValidity('Por favor, preencha o nome todo')"  oninput="setCustomValidity('')"onkeypress="return ApenasLetras(event,this);" readonly="readonly">
                   </div> 
                   <div class="form-group">
                     <label for="cel">Celular</label>
                     <input type="text" class="form-control obrigatorio" id="cel"name="cel" 
-                      required oninvalid="setCustomValidity('Por favor, preencha o celular')"  oninput="setCustomValidity('')" onkeypress="$(this).mask('(00) 00000-0009')">
+                      required oninvalid="setCustomValidity('Por favor, preencha o celular')"  oninput="setCustomValidity('')" onkeypress="$(this).mask('(00) 00000-0009')" readonly="readonly">
                   </div> 
                   <div class="form-group">
                       <label for="cpf">CPF</label>
                       <input type="text" class="form-control obrigatorio" id="cpf"name="cpf" 
-                        required oninvalid="setCustomValidity('Por favor, preencha o CPF')"  oninput="setCustomValidity('')" maxlength="11" placeholder="digite somente o número ex:00000000000" onblur="return verificarCPF(this.value)">
+                        required oninvalid="setCustomValidity('Por favor, preencha o CPF')"  oninput="setCustomValidity('')" maxlength="11" placeholder="digite somente o número ex:00000000000" onblur="return verificarCPF(this.value)" readonly="readonly">
                   </div>   
                   <div class="form-group">
                       <label for="identidade">RG</label>
                       <input type="text" class="form-control obrigatorio" id="identidade"name="identidade" 
-                        required oninvalid="setCustomValidity('Por favor, preencha o RG')"  oninput="setCustomValidity('')"  onkeypress="$(this).mask('00.000.000 -0')">
+                        required oninvalid="setCustomValidity('Por favor, preencha o RG')"  oninput="setCustomValidity('')"  onkeypress="$(this).mask('00.000.000 -0')" readonly="readonly" readonly="readonly">
                   </div> 
                   <div class="form-group">
                       <label for="orgaoExpedidor">Orgão Expedidor</label>
                       <input type="text" class="form-control obrigatorio" id="orgaoExpedidor"name="orgaoExpedidor" 
-                        required oninvalid="setCustomValidity('Por favor, preencha o Orgão Expedidor')"  oninput="setCustomValidity('')" onkeypress="return ApenasLetras(event,this);">
+                        required oninvalid="setCustomValidity('Por favor, preencha o Orgão Expedidor')"  oninput="setCustomValidity('')" onkeypress="return ApenasLetras(event,this);" readonly="readonly">
                   </div>                  
                   <div class="form-group">
                       <label for="outra_data">Data de Nascimento</label>
-                      <input type="text" class="form-control outra_data obrigatorio" name="outra_data" 
-                        required oninvalid="setCustomValidity('Por favor, preencha a Data de Nascimento')"   maxlength="10" onkeypress="dtNascimento(this)" oninput="setCustomValidity('')" >
+                      <input type="text" id="outra_data" class="form-control outra_data obrigatorio" name="outra_data" 
+                        required oninvalid="setCustomValidity('Por favor, preencha a Data de Nascimento')"   maxlength="10" onkeypress="dtNascimento(this)" oninput="setCustomValidity('')" readonly="readonly">
                   </div>                          
                   <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" class="form-control input-md obrigatorio" id="email" name="email" 
-                      required oninvalid="setCustomValidity('Por favor, preencha o seu e-mail')"   oninput="setCustomValidity('')">
+                      required oninvalid="setCustomValidity('Por favor, preencha o seu e-mail')"   oninput="setCustomValidity('')" readonly="readonly">
                   </div>                   
                     <div class="form-group">
                         <label for="cep">Cep</label>
                         <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);" class="form-control obrigatorio"  aria-describedby="emailHelp" 
-                          required >
+                          required  readonly="readonly">
                     </div>                   
                     <div class="form-group">
                           <label for="rua">Rua</label>
                           <input name="rua" type="text" id="rua" class="form-control obrigatorio"  aria-describedby="emailHelp" 
-                            required>
+                            required readonly="readonly">
                     </div>
                     <div class="form-group">
                           <label for="num">Número</label>
                           <input type="text" id="num" class="form-control obrigatorio"  aria-describedby="emailHelp" name="num"
-                          required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" onkeyup="somenteNumeros(this);">
+                          required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" onkeyup="somenteNumeros(this);" readonly="readonly">
                    </div>
                     <div class="form-group">
                           <label for="complemento">Complemento</label>
                           <input type="text" id="complemento" class="form-control obrigatorio" aria-describedby="emailHelp" 
-                          required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')" >
+                          required oninvalid="setCustomValidity('Por favor, preencha o complemento')"  oninput="setCustomValidity('')"readonly="readonly" >
                     </div>
 
                     <div class="form-group">
                         <label for="bairro">Bairro</label>
                         <input name="bairro" type="text" id="bairro" class="form-control obrigatorio" aria-describedby="emailHelp" 
-                        required>
+                        required readonly="readonly">
                     </div>
                       <div class="form-group">
                         <label for="cidade">Cidade</label>
                         <input name="cidade" id="cidade" type="text" class="form-control obrigatorio" aria-describedby="emailHelp" 
-                        required>
+                        required readonly="readonly">
                     </div>
                             
                     <div class="form-group">
                         <label for="uf">UF</label>
                         <input name="uf" type="text" id="uf" class="form-control obrigatorio" aria-describedby="emailHelp" 
-                        required>
+                        required readonly="readonly">
                     </div>                 
                     <div class="form-group">
                       <label for="senha">Senha</label>
-                      <input type="password" class="form-control obrigatorio" id="senha" required oninvalid="setCustomValidity('Por favor, crie a sua senha')"  oninput="setCustomValidity('')">
+                      <input type="password" class="form-control obrigatorio" id="senha" required oninvalid="setCustomValidity('Por favor, crie a sua senha')"  oninput="setCustomValidity('')"readonly="readonly">
                     </div>
                 
-                  <button type="submit" class="btn btn-warning" id="botao" >Cadastrar</button>
-                </section>
-               <!--<div class="input-group mb-3">
-                    <select class="custom-select" id="tipoCadastro">
-                      <option selected>Escolha o Tipo de Cadastro</option>
-                      <option value="1">ONG</option>
-                      <option value="2">Protetor</option>
-                      <option value="3">Adotante</option>
-                    </select>               
-                  </div>-->               
+                  <button type="submit" class="btn btn-warning" id="botao" >Salvar Alterações</button>
+                </section>                            
               </form>
         </div>
       </section>
     </main>
-    <!-- Modal --> 
+    <!-- Modal Excluir Conta --> 
 <div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="justify-content-center container">
-            <h2 class="logar">Já sou cadastrado</h2>
+            <h2 class="logar">Você Realmente Deseja Excluir sua Conta?</h2>
       <div class="modal-body">
-          <form>
-              <div class="form-group">
-                  <label for="login">E-mail</label>
-                  <input type="email" class="form-control input-login" name="login" required placeholder="Digite seu E-mail" oninvalid="setCustomValidity('Por favor, o seu login precisa ser o seu e-mail')"  oninput="setCustomValidity('')" > 
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control input-login" id="exampleInputPassword1" required placeholder="Digite sua Senha" oninvalid="setCustomValidity('Por favor, digite a sua senha')"  oninput="setCustomValidity('')">
-              </div>
-              <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label lembra-senha" for="exampleCheck1">Lembrar minha senha</label>
-              </div>
-             <button type="submit" class="btn btn-warning  entrar-login">Entrar</button>
-             <button type="button"  id="botao-x"  class="close X" data-dismiss="modal" aria-label="Close">
+          <form>          
+             <button type="submit" class="btn btn-warning  entrar-login">Excluir</button>
+             <button type="button" class="btn btn-warning  entrar-login" data-dismiss="modal" aria-label="Close">Cancelar</button>
+            <!-- <button type="button" id="botao-x" class="close X" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
-            </button> 
-            </form><br>
-            <a class="ajuda" href="cadastro.html">Não sou cadastrado</a>                       
+            </button> -->
+            </form>                     
       </div>
     </div>
   </div>
@@ -190,8 +185,7 @@
           >Contate-nos: &copy;SOS PET</a
         >
       </p>
-    </footer> 
-    <script src="js/cadastro.js"></script>       
+    </footer>       
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -210,6 +204,7 @@
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="js/minhaConta.js"></script> 
   </body>
 </html>
 

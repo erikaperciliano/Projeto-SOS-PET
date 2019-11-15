@@ -261,6 +261,10 @@ label {
 }
 
 @media (max-width: 500px) {
+  #botao-x {
+    margin-top: -100% !important;
+  }
+
   #search.home-search-area {
     width: auto !important;
     justify-content: center !important;
