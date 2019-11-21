@@ -1,0 +1,249 @@
+h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15%;
+  font-weight: bold;
+}
+
+.button {
+  margin-bottom: 2% !important;
+}
+
+.navbar-header {
+  color: white;
+  font-family: 'Chilanka', cursive;
+}
+
+.logo {
+  font-family: 'Chilanka', cursive;
+  font-family: 'Cute Font', cursive;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+}
+
+.center {
+  font: 900 18px/120% Pbold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.center,
+a:hover {
+  text-decoration: none;
+}
+
+#excluir-conta :hover,
+#excluir-conta {
+  background: #fec118;
+}
+
+#excluir-conta a {
+  margin-left: -5% !important;
+}
+
+.cor-especial {
+  color: #191818;
+  font-weight: bold;
+  background: #fec118;
+}
+
+.fundo {
+  background: #fec118;
+  color: white;
+}
+.nav-header a:hover {
+  background: #ffc107 !important;
+}
+.nav-header figure :hover {
+  background: #fec118 !important;
+}
+
+.nav-header {
+  background-color: #ffc107 !important;
+  width: 100%;
+  padding: 30px;
+  /* height: auto; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*border-bottom: 40px solid black;*/
+}
+
+#borda-black {
+  border-bottom: 40px solid black !important;
+  margin-top: 5% !important;
+}
+
+.fundo a:hover {
+  background: #191818;
+  color: white;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.rodape {
+  margin-top: 30%; /*30*/
+  height: 2%;
+}
+
+@media (max-width: 500px) {
+  #my-photo {
+    margin-top: 100% !important;
+    margin-left: 5% !important;
+  }
+
+  #botao-x {
+    margin-top: -108% !important;
+  }
+
+  #excluir-conta a {
+    margin-left: 0% !important;
+  }
+
+  #search.home-search-area {
+    width: auto !important;
+    justify-content: center !important;
+    height: auto;
+  }
+  #botao {
+    margin-left: 30% !important;
+    width: 40% !important;
+  }
+
+  #borda-black {
+    border-bottom: 40px solid black !important;
+    margin-top: 0 !important;
+  }
+  .logo {
+    position: relative !important;
+  }
+
+  .img {
+    margin-bottom: 80%;
+  }
+}
+/*
+      #ong {
+        display: none;
+      }*/
+/*CSS do MODAl*/
+.ajuda {
+  color: #000;
+}
+
+.entrar {
+  margin-left: 65%;
+}
+
+label {
+  margin: 0 0px 0 0;
+  font-size: 15px;
+  display: inline;
+}
+
+.input-login {
+  margin-top: 4%;
+}
+
+.entrar-login,
+.sair-login {
+  margin-top: 15px;
+}
+.entrar-login :hover {
+  color: #fff;
+}
+.ajuda:hover {
+  color: #fec118 !important;
+}
+
+input[type='checkbox' i] {
+  background-color: initial;
+  cursor: default;
+  -webkit-appearance: checkbox;
+  box-sizing: border-box;
+  padding: initial;
+  border: initial;
+}
+
+.logar {
+  font-family: 'Fredoka One', cursive;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15%;
+  font-weight: bold;
+}
+
+.botao-login :hover {
+  background: #fec118 !important;
+}
+
+#botao {
+  /*width: 20%;*/
+}
+
+.hover-cadastro:hover {
+  background: #fec118 !important;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.X {
+  font-size: 4.5rem;
+  margin-top: -70% !important;
+}
+
+.ajuda {
+  color: #000;
+}
+
+.entrar-login,
+.sair-login {
+  margin-top: 15px;
+}
+.entrar-login :hover {
+  color: #fff;
+}
+.ajuda:hover {
+  color: #fec118 !important;
+}
+
+#botao {
+  margin-left: 40%;
+  width: 20%;
+  line-height: 1.9em;
+  border-radius: 10px 10px;
+}
+
+#descricao {
+  width: 100% !important;
+  line-height: 300% !important;
+}

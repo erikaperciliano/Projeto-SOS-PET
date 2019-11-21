@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOS PET</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Lobster|Noto+Serif&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Handlee|Noto+Serif&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Chilanka|Cute+Font&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/listaAnimais.css"/>
+    <link rel="shortcut icon" href="img/favicon.png" />
+  </head>
+  <body>      
+      <header class="menu">
+      <nav class="navbar navbar-expand-lg justify-content-center  fixed-top nav-header btn-warning logo navbar-toggler" data-toggle="collapse nav">
+        <ul class="center navbar-nav  btn-warning">
+          <a class="navbar font-titulo cor-especial btn-warning logo" href="index.html"><span class="responsible">SOS PET</span></a>
+
+          <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle navbar-header btn-warning" data-toggle="dropdown" href="#" role="button"
+                aria-haspopup="true" aria-expanded="false responssible-inicio">Início</a>
+    
+              <div class="dropdown-menu fundo">
+                <a class="dropdown-item nav-item nav-link" href="sobreNos.html">Sobre Nós</a>
+                <a class="dropdown-item nav-item nav-link" href="mausTratos.html">Leis de proteção aos animais</a> 
+                <a class="dropdown-item nav-item nav-link" href="index.html">Adote</a>                
+              </div>
+            </li>            
+          <li class="nav-item">
+              <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="editarAnimais.html">Editar Animal</a>
+          </li>
+          <div id="excluir-conta" data-toggle="modal" data-target="#exampleModalCenter" >
+            <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote">Excluir Animal</a></div> 
+         <!-- <li class="nav-item">
+            <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote data-toggle="modal data-target="#exampleModalCenter" href="#">Excluir</a>
+          </li>-->
+
+            <li class="nav-item">
+                <a class="nav-link navbar-header btn-warning nav-item nav-link responssible-adote" href="minhaConta.html">Minha Conta</a>
+              </li>
+        </ul>
+        </div>
+      </nav>
+      <div id="borda-black"></div>
+    </header>
+    <main class="img">               
+    <section id="corpo">
+          <h3 class="img img-texto"></h3>
+          <h1 class="lista-animais img peludinho">Meus Peludinhos</h1>
+    </section>
+    
+    <section class="container bg-light" id="pets">
+
+        <div class="row justify-content-center fundo-artigo">
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/cachorro1.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Kiko
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">M</div>
+                      <div class="info1">P</div>
+                      <div class="info2">G</div>
+                  </div>
+                  <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+              </div>
+            </div>
+          </article>
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/gato 1.jpg"
+              alt="cachorro"
+            />
+            
+            <div class="card-body">                        
+              <p class="card-text">
+                Espedita
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+              <div class="details">
+                  <div class="active porte-animal">P</div>
+                  <div class="info1">M</div>
+                  <div class="info2">G</div>
+              </div>
+              <img class="female" src="img/femea.png" alt="gato">
+            </div>
+            <div id="mais-informacoes">
+              <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+            </div>
+          </div>
+          </article>
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/cachorro2.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Rasmus
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">P</div>
+                      <div class="info1">M</div>
+                      <div class="info2">G</div>
+                  </div>
+                  <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                  <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+                </div>
+            </div>
+          </article>
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/gato 2.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Osvaldo
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">P</div>
+                      <div class="info1">M</div>
+                      <div class="info2">G</div>
+                  </div>
+                  <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                  <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+                </div>
+            </div>
+          </article>
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem tita"
+              src="img/cachorro3.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Tita
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">P</div>
+                      <div class="info1">M</div>
+                      <div class="info2">G</div>
+                  </div>
+                  <img class="female" src="img/femea.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                  <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+                </div>
+            </div>
+          </article>
+
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/gato 3.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text">
+               Stevam
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">P</div>
+                      <div class="info1">M</div>
+                      <div class="info2">G</div>
+                  </div>
+                  <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                  <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+                </div>
+            </div>
+          </article>
+
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/cachorro4.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Chocolate
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">M</div>
+                      <div class="info1">P</div>
+                      <div class="info2">G</div>
+                  </div>
+                  <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                  <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+                </div>
+            </div>
+          </article>
+
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/cat5.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Snow
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">P</div>
+                      <div class="info1">M</div>
+                      <div class="info2">G</div>
+                  </div>
+                  <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                  <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+                </div>
+            </div>
+          </article>
+
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/cachorro5.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Caramelo
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">G</div>
+                      <div class="info1">M</div>
+                      <div class="info2">P</div>
+                  </div>
+                  <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                  <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+                </div>
+            </div>
+          </article>
+
+          <article
+            class="card borda-cor-especial card-largura p-0 m-2 col-12 col-md-2"
+          >
+            <img
+              class="card-img-top card-posicao-imagem img-fluid"
+              src="img/gato 4.jpg"
+              alt="cachorro"
+            />
+            <div class="card-body">
+              <p class="card-text ">
+                Chico
+              </p>
+              <p class="state">Rio de Janeiro / Rj</p>
+              <div class="pai">
+                  <div class="details">
+                      <div class="active porte-animal">P</div>
+                      <div class="info1">M</div>
+                      <div class="info2">G</div>
+                  </div>
+                  <img class="female" src="img/macho.png" alt="gato">
+                </div>
+                <div id="mais-informacoes">
+                  <a class="leia-mais  btn btn-warning modal-body entrar-login" href="infoDosAnimais.html">Leia Mais</a>
+                </div>
+            </div>
+            </article>
+          </article>
+        </div>
+      </section>
+    </main>
+   <!-- Modal Excluir Conta --> 
+   <div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="justify-content-center container">
+              <h2 class="logar">Você Realmente Deseja Excluir esse Animal?</h2>
+        <div class="modal-body">
+            <form>          
+               <button type="submit" class="btn btn-warning  entrar-login">Excluir</button>
+               <button type="button" class="btn btn-warning  entrar-login" data-dismiss="modal" aria-label="Close">Cancelar</button>
+              </form>                     
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><br>
+<!--PAGINAÇÃO-->
+<nav aria-label="...">
+  <ul class="pagination paginacao">
+    <li class="page-item disabled">
+      <a class="page-link" href="index.html" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+    <footer class="bg-secondary p-3 rodape">
+      <p class="text-light m-0 text-center">
+        <a class="text-light" href="mailto:sos@pet.com.br?subject=DeveloperContact"
+          >Contate-nos: &copy;SOS PET</a
+        >
+      </p>
+    </footer>
+          </header>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="#"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+  </body>
+</html>
