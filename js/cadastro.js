@@ -145,29 +145,13 @@ function somenteNumeros(num) {
   }
 }
 
-//Valida campo nome e Orgão Expedidor
-function ApenasLetras(e, t) {
-  try {
-    if (window.event) {
-      var charCode = window.event.keyCode;
-    } else if (e) {
-      var charCode = e.which;
-    } else {
-      return true;
-    }
-    if (
-      (charCode > 64 && charCode < 91) ||
-      (charCode > 96 && charCode < 123) ||
-      (charCode > 191 && charCode <= 255) // letras com acentos
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  } catch (err) {
-    alert(err.Description);
-  }
-}
+//Valida campo nome
+$('#nome').keyup(function() {
+  this.value = this.value.replace(
+    /[^A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]/g,
+    ''
+  );
+});
 
 // validador CPF
 function verificarCPF(c) {

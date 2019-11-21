@@ -1,3 +1,11 @@
+//Valida campo nome
+$('#nome').keyup(function() {
+  this.value = this.value.replace(
+    /[^A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]/g,
+    ''
+  );
+});
+
 //Valida campo Data Nascimento
 function dtNascimento(val) {
   var pass = val.value;

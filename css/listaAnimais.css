@@ -420,6 +420,10 @@ label {
   justify-content: center !important;
 }
 
+.btn-success {
+  background-color: darkgreen !important;
+}
+
 .home-search-area h1 {
   color: #ffffff;
   opacity: 0.95;
