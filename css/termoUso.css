@@ -1,0 +1,323 @@
+h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  
+  .navbar-header {
+    color: white;
+    font-family: 'Chilanka', cursive;
+  }
+  
+  .logo {
+    font-family: 'Chilanka', cursive;
+    font-family: 'Cute Font', cursive;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+  }
+  
+  .center {
+    font: 900 18px/120% Pbold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .center,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .cor-especial {
+    color: #191818;
+    font-weight: bold;
+    background: #fec118;
+  }
+  
+  .fundo {
+    background: #fec118;
+    color: white;
+  }
+  .nav-header a:hover {
+    background: #ffc107 !important;
+  }
+  
+  .nav-header {
+    background-color: #ffc107 !important;
+    width: 100%;
+    padding: 30px;
+    /* height: auto; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*border-bottom: 40px solid black;*/
+  }
+  
+  #borda-black {
+    border-bottom: 40px solid black !important;
+    margin-top: 5% !important;
+  }
+  
+  .fundo a:hover {
+    background: #191818;
+    color: white;
+  }
+  
+  .menu {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  
+  .rodape {
+    margin-top: 30%; /*30*/
+    height: 2%;
+  }
+  
+  @media (max-width: 500px) {
+    #botao-x {
+      margin-top: -108% !important;
+    }
+  
+    #search.home-search-area {
+      width: auto !important;
+      justify-content: center !important;
+      height: auto;
+    }
+    #borda-black {
+      border-bottom: 40px solid black !important;
+      margin-top: 0 !important;
+    }
+    .logo {
+      position: relative !important;
+    }
+  
+    .img {
+      margin-bottom: 80%;
+    }
+  }
+  /*
+      #ong {
+        display: none;
+      }*/
+  /*CSS do MODAl*/
+  .ajuda {
+    color: #000;
+  }
+  
+  .entrar {
+    margin-left: 65%;
+  }
+  
+  label {
+    margin: 0 0px 0 0;
+    font-size: 15px;
+    display: inline;
+  }
+  
+  .input-login {
+    margin-top: 4%;
+  }
+  
+  .entrar-login,
+  .sair-login {
+    margin-top: 15px;
+  }
+  .entrar-login :hover {
+    color: #fff;
+  }
+  .ajuda:hover {
+    color: #fec118 !important;
+  }
+  
+  input[type='checkbox' i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    padding: initial;
+    border: initial;
+  }
+  
+  .logar {
+    font-family: 'Fredoka One', cursive;
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-top: 15%;
+    font-weight: bold;
+  }
+  
+  .botao-login :hover {
+    background: #fec118 !important;
+  }
+  /*INFO ANIMAIS*/
+  .info-animais {
+    background: #f0ece0;
+    height: 50%;
+  }
+  
+  .resultado {
+    margin-left: 9%;
+  }
+  .estrela {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /*TESTE*/
+  /*#carouselExampleCaptions {
+      width: 50% !important;
+      height: 50% !important;
+    }*/
+  
+  .imagem-carrosel1 {
+    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+    object-position: 0 34%; /*eixos: x e y*/
+    height: 400px;
+  }
+  
+  .imagem-carrosel2 {
+    object-fit: cover;
+    object-position: 0 50%;
+    height: 400px;
+  }
+  
+  .imagem-carrosel3 {
+    object-fit: cover;
+    object-position: 0 50%;
+    height: 400px;
+  }
+  
+  @media (max-width: 500px) {
+    .imagem-carrosel1 {
+      object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+      object-position: 90% 0%; /*eixos: x e y*/
+    }
+  
+    .imagem-carrosel2 {
+      object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
+      object-position: 50% 0%; /*eixos: x e y*/
+      height: 400px;
+    }
+    .imagem-carrosel3 {
+      object-fit: cover;
+      object-position: 30% 0%;
+    }
+    .primeiro,
+    .segundo,
+    .terceiro,
+    .quarto {
+      margin: 0;
+      display: inline-block;
+      justify-content: center;
+      margin-top: 5% !important;
+    }
+  }
+  
+  .descricao {
+    justify-content: center;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  body {
+    background-color: #f2fffc;
+  }
+  /*teste*/
+  .titulo-maus-tratos {
+    text-align: center;
+    background-color: #fec118;
+    color: #fff;
+    padding: 2rem;
+    border-bottom: 0.5rem solid #000;
+    margin-top: 5%;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 3px 3px #000;
+  }
+  
+  main p {
+    margin: 1em 0;
+  }
+  
+  .Q {
+    font-size: 200%;
+    font-weight: bold;
+    color: #3c1d3d;
+    text-shadow: 1 px 1 px #000;
+    margin-right: 0, 2ch;
+    line-height: 1;
+  }
+  
+  .ex-maus-tratos:before {
+    position: absolute;
+    font-size: 10em;
+    line-height: 0.8;
+    color: #bbb;
+  }
+  
+  .ex-maus-tratos {
+    background-color: #d9e5e3;
+    border: 0.5em solid #c2ccca;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 1s, 0s;
+  }
+  
+  .primeiro,
+  .segundo,
+  .terceiro {
+    margin: 0;
+    display: inline-block;
+    justify-content: space-around;
+    line-height: 1em;
+  }
+  
+  .primeiro {
+    line-height: 0.86em !important;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .hover-login:hover {
+    background: #fec118;
+  }
+  
+  .X {
+    font-size: 4.5rem;
+    margin-top: -70% !important;
+  }
+  
