@@ -81,15 +81,6 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-  /*#botao {    margin-left: 30% !important;    width: 40% !important;  }*/
-  #botao  {
-      margin-left: 40%;
-      width: 20%;
-      line-height: 1.9em;
-      border-radius: 10px 10px;
-      margin-top: 2%;
-  }
-
   #search.home-search-area {
     width: auto !important;
     justify-content: center !important;
@@ -219,6 +210,11 @@ input[type='checkbox' i] {
     object-fit: cover;
     object-position: 30% 0%;
   }
+
+  #botao {
+    margin-left: 20% !important;
+    width: 40% !important;
+  }
 }
 
 .descricao {
@@ -241,6 +237,6 @@ h4 {
   margin-left: 40% !important;
   width: 20%;
   line-height: 1.9em;
-  border-radius: 10px 10px;
+  border-radius: 10px 10px !important;
    margin-top: 2%;
 }
