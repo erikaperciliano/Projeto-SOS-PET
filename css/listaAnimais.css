@@ -424,6 +424,10 @@ label {
   background-color: darkgreen !important;
 }
 
+.btn-pendente {
+  background-color: darkred !important;
+}
+
 .home-search-area h1 {
   color: #ffffff;
   opacity: 0.95;
