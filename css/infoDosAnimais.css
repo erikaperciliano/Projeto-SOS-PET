@@ -80,7 +80,23 @@ a:hover {
   height: 2%;
 }
 
+#botao {
+  margin-left: 40% !important;
+  width: 50%;
+  line-height: 1.9em;
+  border-radius: 10px 10px !important;
+   margin-top: 2%;
+}
+
 @media (max-width: 500px) {
+  #botao {
+    margin-left: 25% !important;
+    width: 50%;
+    line-height: 1.9em;
+    border-radius: 10px 10px !important;
+     margin-top: 2%;
+  }
+
   #search.home-search-area {
     width: auto !important;
     justify-content: center !important;
@@ -98,6 +114,7 @@ a:hover {
     margin-bottom: 80%;
   }
 }
+
 /*
   #ong {
     display: none;
@@ -195,28 +212,6 @@ input[type='checkbox' i] {
   height: 400px;
 }
 
-@media (max-width: 500px) {
-  .imagem-carrosel1 {
-    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
-    object-position: 90% 0%; /*eixos: x e y*/
-  }
-
-  .imagem-carrosel2 {
-    object-fit: cover; /*o comportamento do elemento selecionado em relação ao container dele */
-    object-position: 50% 0%; /*eixos: x e y*/
-    height: 400px;
-  }
-  .imagem-carrosel3 {
-    object-fit: cover;
-    object-position: 30% 0%;
-  }
-
-  #botao {
-    margin-left: 20% !important;
-    width: 40% !important;
-  }
-}
-
 .descricao {
   justify-content: center;
 }
@@ -231,12 +226,4 @@ h4 {
 
 #resultado a:hover {
   color: #fec118 !important;
-}
-
-#botao {
-  margin-left: 40% !important;
-  width: 20%;
-  line-height: 1.9em;
-  border-radius: 10px 10px !important;
-   margin-top: 2%;
 }
