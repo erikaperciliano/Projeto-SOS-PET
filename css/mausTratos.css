@@ -80,6 +80,24 @@ a:hover {
   height: 2%;
 }
 
+.ex-maus-tratos:before {
+  position: absolute;
+  font-size: 10em;
+  line-height: 0.8;
+  color: #bbb;
+}
+
+.ex-maus-tratos {
+  background-color: #d9e5e3;
+  border: 0.5em solid #c2ccca;
+  padding: 1em;
+  margin: 1em 2em;
+  width: 30ch;
+  box-sizing: border-box;
+  transition: box-shadow 1s, transform 1s;
+  transition-delay: 1s, 0s;
+}
+
 @media (max-width: 500px) {
   #botao-x {
     margin-top: -108% !important;
@@ -212,8 +230,8 @@ input[type='checkbox' i] {
   }
   .primeiro,
   .segundo,
-  .terceiro,
-  .quarto {
+  .terceiro {
+    margin-left: -4% !important;
     margin: 0;
     display: inline-block;
     justify-content: center;
@@ -258,24 +276,6 @@ main p {
   text-shadow: 1 px 1 px #000;
   margin-right: 0, 2ch;
   line-height: 1;
-}
-
-.ex-maus-tratos:before {
-  position: absolute;
-  font-size: 10em;
-  line-height: 0.8;
-  color: #bbb;
-}
-
-.ex-maus-tratos {
-  background-color: #d9e5e3;
-  border: 0.5em solid #c2ccca;
-  padding: 1em;
-  margin: 1em 2em;
-  width: 30ch;
-  box-sizing: border-box;
-  transition: box-shadow 1s, transform 1s;
-  transition-delay: 1s, 0s;
 }
 
 .primeiro,
