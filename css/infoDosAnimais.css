@@ -81,8 +81,7 @@ a:hover {
 }
 
 #botao {
-  margin-left: 40% !important;
-  width: 50%;
+  margin-left: 44% !important;
   line-height: 1.9em;
   border-radius: 10px 10px !important;
    margin-top: 2%;
@@ -90,8 +89,8 @@ a:hover {
 
 @media (max-width: 500px) {
   #botao {
-    margin-left: 25% !important;
-    width: 50%;
+    margin-left: 29% !important;
+    width: auto !important;
     line-height: 1.9em;
     border-radius: 10px 10px !important;
      margin-top: 2%;
